@@ -47,6 +47,13 @@ export const PortfolioPage = () => {
     },
     {
       image:
+        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/apuk-nav-design.png",
+      cardType: "Image",
+      cardSubTitle: "Figma Nav Design",
+      icon: faImage,
+    },
+    {
+      image:
         "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/reawaken-eventbrite-banner-new-version.png",
       cardType: "Image",
       cardSubTitle: "Eventbrite Banner",
@@ -57,6 +64,13 @@ export const PortfolioPage = () => {
         "https://images.squarespace-cdn.com/content/v1/5db41714f991e52a4904af5f/1606669957396-6HM6WHW3K5OYB047L1QY/ke17ZwdGBToddI8pDm48kPJXHKy2-mnvrsdpGQjlhod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmihaE5rlzFBImxTetd_yW5btdZx37rH5fuWDtePBPDaHF5LxdCVHkNEqSYPsUQCdT/mockup-62011df2.jpg?format=800w",
       cardType: "Image",
       cardSubTitle: "Mask Design (Covid)",
+      icon: faImage,
+    },
+    {
+      image:
+        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1595526500/img/rac-logo.png",
+      cardType: "Image",
+      cardSubTitle: "RAC Logo",
       icon: faImage,
     },
     // {
@@ -84,18 +98,18 @@ export const PortfolioPage = () => {
         {/* <p>Previous Work</p> */}
       </div>
       <div className="portfolio-container">
-        <div className="portfolio-container__filters-container">
+        {/* <div className="portfolio-container__filters-container">
           <ul>
             <li>Tag Filter Feature (Coming Soon)</li>
-            {/* <li>Web Development</li>
+            <li>Web Development</li>
             <li>UI Design</li>
             <li>Logo Design</li>
             <li>Merchandise Design</li>
             <li>Posters</li>
             <li>Social Media Assets</li>
-            <li>Video</li> */}
+            <li>Video</li>
           </ul>
-        </div>
+        </div> */}
         <div className="portfolio-container__media-container">
           {CardData.map((CardData, id) => (
             <Card
