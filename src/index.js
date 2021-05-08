@@ -5,17 +5,12 @@ import "./App.scss";
 import App from "./App";
 
 // import reportWebVitals from "./reportWebVitals";
-document.addEventListener("DOMContentLoaded", (event) => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById("root")
-  );
-
-  // REMOVE CLASS OFF BODY WHEN DOM HAS LOADED
-  document.body.classList.remove("loading");
-});
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

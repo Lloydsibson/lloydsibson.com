@@ -14,14 +14,6 @@ export const Nav = () => {
     // const NavMenuIcon = document.getElementById("nav-icon");
     body.classList.toggle("menu-open");
     // NavMenuIcon.classList.toggle("menu-open");
-
-    // AN A ACTIVE CLASS TO NAV FOR SELECTED PAGE
-    // 1. CHECK URL
-    // let currentURL = window.location.href;
-    // currentURL = currentURL.split("3000/")[1];
-    // //currentURL = currentURL.split(".com/")[1];
-    // console.log(currentURL);
-    // 2. ADDS CLASS TO CURRENT URL NAME
   };
 
   return (
@@ -52,7 +44,7 @@ export const Nav = () => {
         <li>
           {/* <a href="#Offline">About Me</a> */}
           <NavLink to={"/about"} onClick={NavToggle} activeClassName="selected">
-            About Me
+            About
           </NavLink>
         </li>
         <li>

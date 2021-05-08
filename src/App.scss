@@ -90,6 +90,7 @@ html {
 body {
   margin: 0;
   width: 100%;
+  background-color: $secondary-color;
   @extend %body-backgroundcolor;
 }
 
@@ -119,24 +120,6 @@ body.loading {
       overflow-x: hidden;
     }
   }
-}
-
-.loading-screen {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  @extend %body-backgroundcolor;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -ms-transition: all 1s;
-  transition: all 1s;
-  z-index: -9999;
-  opacity: 0;
 }
 
 // CSS LOADING ICON - RIPPLE EFFECT
