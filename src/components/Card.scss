@@ -10,6 +10,8 @@
     overflow: hidden;
     padding-top: 23%;
     margin: 0.7%;
+    // SAFARI BORDER RADIUS FIX
+    transform: translateZ(0);
     // border: 2px solid $primary-color;
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
     &:hover {

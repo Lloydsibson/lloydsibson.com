@@ -1,5 +1,6 @@
 import "./1-HomePage.scss";
 import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2021.pdf";
+import VideoBackground from "../components/VideoBackground";
 
 export const HomePage = () => {
   // // TYPE EFFECT ON TEXT
@@ -45,33 +46,36 @@ export const HomePage = () => {
   //   StartTextAnimation(0);
   // }, 1900);
   return (
-    <div className="homepage container">
-      <div className="homepage-container__text-container">
-        <div className="text-inner-container">
-          <h1>
-            Front End <span>Dev & Designer</span>
-          </h1>
-          {/* <div id="type-text"></div> */}
+    <>
+      <VideoBackground />
+      <div className="homepage container">
+        <div className="homepage-container__text-container">
+          <div className="text-inner-container">
+            <h1>
+              Front End <span>Dev & Designer</span>
+            </h1>
+            {/* <div id="type-text"></div> */}
+          </div>
+          <h3>Founder of Monocode</h3>
+          <p>
+            I'm a innovative developer with a design background. By combining
+            both these worlds my employers, or clients save time and have a
+            truly consistent bespoke solution.
+          </p>
+          <div className="btn-primary">
+            <a href={CvTwoPage} download>
+              Download CV
+            </a>
+          </div>
         </div>
-        <h3>Founder of Monocode</h3>
-        <p>
-          I'm a innovative developer with a design background. By combining both
-          these worlds my employers, or clients save time and have a truly
-          consistent bespoke solution.
-        </p>
-        <div className="btn-primary">
-          <a href={CvTwoPage} download>
-            Download CV
-          </a>
+        <div className="homepage-container__image-container">
+          {/* <div className="hp-image"></div> */}
+          <img
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620401501/img/logo-homepage.png"
+            alt="Monocode Logo"
+          />
         </div>
       </div>
-      <div className="homepage-container__image-container">
-        {/* <div className="hp-image"></div> */}
-        <img
-          src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620401501/img/logo-homepage.png"
-          alt="Monocode Logo"
-        />
-      </div>
-    </div>
+    </>
   );
 };

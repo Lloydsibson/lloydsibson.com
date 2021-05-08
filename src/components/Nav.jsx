@@ -32,7 +32,10 @@ export const Nav = () => {
       </div>
       <ul
         className="nav-container__links-container"
-        style={{ height: `${window.innerHeight}px` }}
+        style={{
+          height: `${window.innerHeight}px`,
+          top: `-${window.innerHeight}px`,
+        }}
       >
         <li>
           <NavLink

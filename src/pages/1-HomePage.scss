@@ -2,6 +2,8 @@
 
 .homepage.container {
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
   .homepage-container__text-container {
     width: 50%;
     display: flex;
@@ -63,8 +65,8 @@
   img {
     width: 100%;
     max-width: 400px;
-    background-color: #333;
-    border: 1px solid #333;
+    // background-color: #333;
+    // border: 1px solid #333;
     border-radius: 1000px;
     // filter: grayscale(1);
     -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 80%);
