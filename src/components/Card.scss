@@ -115,7 +115,7 @@
 
 @media only screen and (max-width: 900px) {
   .portfolio-container__media-container {
-    a {
+    .card-container {
       .card-container__image {
         top: -8%;
       }
@@ -124,7 +124,7 @@
 }
 @media only screen and (min-width: 550px) and (max-width: 900px) {
   .portfolio-container__media-container {
-    a {
+    .card-container {
       width: 48%;
       padding-top: 40%;
       margin: 1%;
@@ -135,17 +135,15 @@
 
 @media only screen and (max-width: 550px) {
   .portfolio-container__media-container {
-    a {
+    .card-container {
       width: 99.6%;
       margin: 0 0 20px 0;
       padding-top: 80%;
-      .card-container {
-        .card-container__subtitle {
-          opacity: 1;
-        }
-        .card-container__icon {
-          opacity: 1;
-        }
+      .card-container__subtitle {
+        opacity: 1;
+      }
+      .card-container__icon {
+        opacity: 1;
       }
     }
   }

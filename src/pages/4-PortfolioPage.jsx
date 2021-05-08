@@ -72,7 +72,7 @@ export const PortfolioPage = () => {
         "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013643/img/portfolio/amo-cards.png",
       cardType: "Image",
       cardSubTitle: "AMO ID Cards",
-      icon: faLink,
+      icon: faImage,
     },
   ];
 

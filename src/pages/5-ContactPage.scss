@@ -2,14 +2,14 @@
 
 .content-container {
   display: flex;
-  align-items: flex-end;
+  align-items: end;
   justify-content: space-between;
   .content-container__contact-details-container {
     width: 38%;
     padding-right: 5%;
     .contact-cta-container {
       display: flex;
-      align-items: flex-end;
+      align-items: end;
       justify-content: center;
       padding-bottom: 30px;
       .contact-cta-container__icon {
