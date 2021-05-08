@@ -1,7 +1,7 @@
 import "./4-PortfolioPage.scss";
 import { Card } from "../components/Card";
 import { Lightbox } from "../components/Lightbox";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+// import { faLink } from "@fortawesome/free-solid-svg-icons";
 // import { faVideo } from "@fortawesome/free-solid-svg-icons";
 // import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import { faImage } from "@fortawesome/free-solid-svg-icons";

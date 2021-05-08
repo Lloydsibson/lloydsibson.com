@@ -30,7 +30,10 @@ export const Nav = () => {
           Lloyd <span>Sibson</span>
         </h2>
       </div>
-      <ul className="nav-container__links-container">
+      <ul
+        className="nav-container__links-container"
+        style={{ height: `${window.innerHeight}px` }}
+      >
         <li>
           <NavLink
             to={"/"}

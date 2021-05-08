@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { Nav } from "./components/Nav";
 import { HomePage } from "./pages/1-HomePage";
@@ -16,6 +16,7 @@ const App = () => {
     loaComp.classList.add("-show_page");
   });
 
+  // MODERN VERSION - LESS SUPPORT
   // document.addEventListener("readystatechange", (event) => {
   //   if (event.target.readyState === "complete") {
 

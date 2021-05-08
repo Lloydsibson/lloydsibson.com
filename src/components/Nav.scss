@@ -95,6 +95,9 @@
 
 @media only screen and (min-width: 900px) {
   .nav-container {
+    .nav-container__links-container {
+      height: auto !important;
+    }
     #nav-icon {
       display: none;
     }
@@ -141,7 +144,7 @@
       top: -100vh;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: flex-end;
       ///////////
       ///////////
       background: rgb(27, 2, 55);
@@ -170,8 +173,7 @@
       max-width: unset;
       transition: all 0.44s ease-in-out;
       li {
-        margin-left: 20px;
-        margin-right: 0;
+        margin-right: 20px;
         padding: 10px 0;
         a {
           font-size: 3rem;
