@@ -1,7 +1,7 @@
 import "./Card.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const Card = ({ Image, CardType, CardSubTitle, Icon, CardLink }) => {
+export const Card = ({ Image, CardType, CardSubTitle, Icon }) => {
   const lightboxToggle = (e) => {
     // GRAB URL FROM BACKGROUND AND MOVE IT INTO THE LIGHTBOX URL
     const backgroundURLRAW = e.target.style.backgroundImage;
@@ -22,25 +22,23 @@ export const Card = ({ Image, CardType, CardSubTitle, Icon, CardLink }) => {
     // lightboxContainer.classList.toggle("-open");
   };
   return (
-    <a href={CardLink}>
-      <figure className="card-container">
-        <h4 className="card-container__title">{CardType}</h4>
-        <div className="card-container__card-loading-icon lds-ripple">
-          <div></div>
-          <div></div>
-        </div>
-        <div
-          onClick={(e) => lightboxToggle(e)}
-          className="card-container__image"
-          style={{
-            backgroundImage: `url(${Image})`,
-          }}
-        ></div>
-        <p className="card-container__subtitle">{CardSubTitle}</p>
-        <div className="card-container__icon">
-          <FontAwesomeIcon icon={Icon} />
-        </div>
-      </figure>
-    </a>
+    <figure className="card-container">
+      <h4 className="card-container__title">{CardType}</h4>
+      <div className="card-container__card-loading-icon lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+      <div
+        onClick={(e) => lightboxToggle(e)}
+        className="card-container__image"
+        style={{
+          backgroundImage: `url(${Image})`,
+        }}
+      ></div>
+      <p className="card-container__subtitle">{CardSubTitle}</p>
+      <div className="card-container__icon">
+        <FontAwesomeIcon icon={Icon} />
+      </div>
+    </figure>
   );
 };

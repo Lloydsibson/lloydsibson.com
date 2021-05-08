@@ -8,22 +8,21 @@ import { faImage } from "@fortawesome/free-solid-svg-icons";
 
 export const PortfolioPage = () => {
   const CardData = [
-    {
-      image:
-        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/apuk-nav-design.png",
-      cardType: "URL",
-      cardSubTitle: "Figma Design",
-      icon: faImage,
-      cardlink:
-        "https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio",
-    },
+    // {
+    //   image:
+    //     "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/apuk-nav-design.png",
+    //   cardType: "URL",
+    //   cardSubTitle: "Figma Design",
+    //   icon: faImage,
+    //   cardlink:
+    //     "https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio",
+    // },
     {
       image:
         "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/AFTM-a4-poster.png",
       cardType: "Image",
       cardSubTitle: "A4 Event Poster",
       icon: faImage,
-      cardlink: "#image",
     },
     {
       image:
@@ -31,7 +30,6 @@ export const PortfolioPage = () => {
       cardType: "Image",
       cardSubTitle: "T-Shirt Design",
       icon: faImage,
-      cardlink: "#image",
     },
     {
       image:
@@ -39,7 +37,6 @@ export const PortfolioPage = () => {
       cardType: "Image",
       cardSubTitle: "JMGB Logo",
       icon: faImage,
-      cardlink: "#image",
     },
     {
       image:
@@ -47,7 +44,6 @@ export const PortfolioPage = () => {
       cardType: "Image",
       cardSubTitle: "Eventbrite API",
       icon: faImage,
-      cardlink: "#image",
     },
     {
       image:
@@ -55,7 +51,6 @@ export const PortfolioPage = () => {
       cardType: "Image",
       cardSubTitle: "Eventbrite Banner",
       icon: faImage,
-      cardlink: "#image",
     },
     {
       image:
@@ -63,23 +58,21 @@ export const PortfolioPage = () => {
       cardType: "Image",
       cardSubTitle: "Mask Design (Covid)",
       icon: faImage,
-      cardlink: "#image",
     },
-    {
-      image:
-        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/apuk-website.png",
-      cardType: "URL",
-      cardSubTitle: "APUK Website",
-      icon: faLink,
-      cardlink: "https://www.arclightpromotions.co.uk/",
-    },
+    // {
+    //   image:
+    //     "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/apuk-website.png",
+    //   cardType: "URL",
+    //   cardSubTitle: "APUK Website",
+    //   icon: faLink,
+    //   cardlink: "https://www.arclightpromotions.co.uk/",
+    // },
     {
       image:
         "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013643/img/portfolio/amo-cards.png",
       cardType: "Image",
       cardSubTitle: "AMO ID Cards",
       icon: faLink,
-      cardlink: "#image",
     },
   ];
 
@@ -110,7 +103,6 @@ export const PortfolioPage = () => {
               Image={CardData.image}
               CardType={CardData.cardType}
               CardSubTitle={CardData.cardSubTitle}
-              CardLink={CardData.cardlink}
               Icon={CardData.icon}
             />
           ))}

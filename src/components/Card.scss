@@ -1,7 +1,7 @@
 @import "../App";
 
 .portfolio-container__media-container {
-  a {
+  .card-container {
     width: 31.93%;
     display: block;
     position: relative;
@@ -15,89 +15,86 @@
     &:hover {
       cursor: pointer;
     }
-    .card-container {
+    .card-container__title {
+      position: absolute;
+      margin: 0;
+      top: 20px;
+      left: 20px;
+      color: #f5f5f5;
+      padding: 4px 10px;
+      border-radius: 5px;
+      background-color: #222;
+      font-size: 0.88rem;
+      max-width: calc(100% - 67px);
+      z-index: 1;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .card-container__image {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: -15%;
       width: 100%;
-      .card-container__title {
-        position: absolute;
-        margin: 0;
-        top: 20px;
-        left: 20px;
-        color: #f5f5f5;
-        padding: 4px 10px;
-        border-radius: 5px;
-        background-color: #222;
-        font-size: 0.88rem;
-        max-width: calc(100% - 67px);
-        z-index: 1;
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-        background: rgba(0, 0, 0, 0.5);
-      }
-      .card-container__image {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        top: -15%;
-        width: 100%;
-        padding-top: 100%;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-      }
-      .card-container__card-loading-icon {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 50%;
-        margin-left: -40px;
-        z-index: -1;
-      }
-      .card-container__subtitle {
-        position: absolute;
-        margin: 0;
-        bottom: 20px;
-        left: 20px;
-        padding: 3px 7px;
-        border-radius: 5px;
-        font-size: 0.7rem;
-        color: #f5f5f5;
-        background-color: #222;
-        line-height: 1.2em;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-        background: rgba(0, 0, 0, 0.5);
-      }
-      .card-container__icon {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        background-color: #222;
-        padding: 8px;
-        line-height: 15px;
-        border-radius: 6px;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-        background: rgba(0, 0, 0, 0.5);
-        svg {
-          width: 15px;
-          height: 15px;
-          color: $primary-color;
-        }
+      padding-top: 100%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    .card-container__card-loading-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+      margin-left: -40px;
+      z-index: -1;
+    }
+    .card-container__subtitle {
+      position: absolute;
+      margin: 0;
+      bottom: 20px;
+      left: 20px;
+      padding: 3px 7px;
+      border-radius: 5px;
+      font-size: 0.7rem;
+      color: #f5f5f5;
+      background-color: #222;
+      line-height: 1.2em;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .card-container__icon {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: #222;
+      padding: 8px;
+      line-height: 15px;
+      border-radius: 6px;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5);
+      svg {
+        width: 15px;
+        height: 15px;
+        color: $primary-color;
       }
     }
   }
