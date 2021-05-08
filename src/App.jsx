@@ -10,13 +10,18 @@ import { Footer } from "./components/Footer";
 //import LoadingScreen from "./components/LoadingScreen";
 
 const App = () => {
-  useEffect(() => {
-    // console.log("useEffect Initiated");
-    setTimeout(function () {
-      let loaComp = document.querySelector(".loading-screen");
-      loaComp.classList.add("-show_page");
-    }, 1000);
-  }, []);
+  // LOADING ICON - ONCE PAGE AND ALL CONTENT HAS LOADED HIDE LOADING SCREEN
+  window.addEventListener("load", function () {
+    let loaComp = document.querySelector(".loading-screen");
+    loaComp.classList.add("-show_page");
+  });
+
+  // document.addEventListener("readystatechange", (event) => {
+  //   if (event.target.readyState === "complete") {
+
+  //   }
+  // });
+
   return (
     <>
       {/* <LoadingScreen /> */}
