@@ -1,0 +1,180 @@
+@import "../App";
+
+.email-form-container {
+  form {
+    .fs-contact-form-container__inner-container {
+      display: flex;
+      width: 100%;
+      .contact-info-container {
+        margin-right: 3%;
+      }
+      .contact-info-container,
+      .contact-message-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        label {
+          font-size: 0;
+          input,
+          textarea {
+            position: relative;
+            border: 2px solid #555;
+            border-radius: 5px;
+            display: block;
+            font-size: 1em;
+            margin: 0;
+            padding: 10px 25px 10px 12px;
+            width: 100%;
+            min-width: 100%;
+            background: 0 0;
+            text-align: left;
+            color: inherit;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            outline: none;
+            line-height: 1.5;
+            &:focus {
+              border-color: $secondary-color;
+            }
+          }
+          input,
+          textarea,
+          p {
+            font-size: 0.88rem;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 0 21.5px;
+          }
+          textarea {
+            height: 177.5px;
+          }
+        }
+      }
+    }
+    .submit-container {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        margin-top: 0;
+      }
+      .reset-form {
+        max-width: 80px;
+      }
+    }
+  }
+}
+
+/* CUSTOM CHECKBOX */
+.form-pp-container.error {
+  border-color: $secondary-color;
+  max-width: 360px;
+}
+.form-pp-container {
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 0 10px;
+
+  .control {
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: left;
+    color: white;
+    padding-left: 2.8rem;
+    font-size: 0.9rem;
+    p {
+      margin: 0;
+      font-size: 0.8rem;
+      line-height: 1.75em;
+      max-width: 310px;
+    }
+  }
+
+  .control input {
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    width: 19px;
+    height: 19px;
+    z-index: 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .checkbox .control-indicator {
+    border-radius: 50%;
+  }
+
+  .checkbox input:checked ~ .control-indicator {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
+  }
+
+  .control input:checked ~ .control-indicator {
+    color: #fff;
+    background-color: $secondary-color;
+  }
+
+  .control-indicator {
+    position: absolute;
+    top: 0.25rem;
+    left: 0;
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+    line-height: 1rem;
+    font-size: 65%;
+    color: #eee;
+    text-align: center;
+    background-color: #eee;
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.reset-form {
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: right;
+  color: #d5d5d5;
+  text-decoration: underline;
+}
+.reset-form:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  .content-container {
+    .email-form-container {
+      .fs-contact-form-container__inner-container {
+        flex-direction: column;
+        .contact-info-container {
+          width: 100%;
+          margin-right: 0;
+        }
+        .contact-message-container {
+          width: 100%;
+        }
+      }
+      .submit-container {
+        flex-direction: column;
+        align-items: flex-end;
+        button {
+          width: 100%;
+          max-width: unset;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

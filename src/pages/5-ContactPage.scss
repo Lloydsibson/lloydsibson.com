@@ -1,0 +1,76 @@
+@import "../App.scss";
+
+.content-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  .content-container__contact-details-container {
+    width: 38%;
+    padding-right: 5%;
+    .contact-cta-container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 30px;
+      .contact-cta-container__icon {
+        padding: 0 23px 5px 0;
+        svg {
+          color: $secondary-color;
+          width: 32px;
+          height: 32px;
+        }
+      }
+      .contact-cta-container__text {
+        h5 {
+          font-size: 1rem;
+          margin: 0 0 7px 0;
+        }
+        p {
+          margin: 0;
+          font-size: 0.75rem;
+          a {
+            text-decoration: underline;
+            margin: 0 3px;
+          }
+        }
+      }
+    }
+  }
+  .content-container__message-container {
+    width: 65%;
+    h2 {
+      font-size: 1.32rem;
+      margin-top: 0;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 7px;
+      display: inline-block;
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        background-color: $secondary-color;
+        height: 2px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .content-container {
+    flex-direction: column;
+    .content-container__contact-details-container {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+    }
+    .content-container__message-container {
+      width: 100%;
+    }
+  }
+}

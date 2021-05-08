@@ -1,4 +1,29 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://www.lloydsibson.com">
+    <img alt="Monocode Logo" src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013440/img/logo-large-tp.png" width="100" />
+  </a>
+</p>
+<h1 align="center">
+  Lloyd Sibson's Portfolio
+</h1>
+
+## 🚀 Contact
+
+**Linkedin**
+
+<a href="https://www.linkedin.com/in/lloyd-sibson/">https://www.linkedin.com/in/lloyd-sibson/</a>
+
+**Email**
+
+<a href="mail:to">lloydsibson2021@gmail.com</a>
+
+**Portfolio Website (LIVE)**
+
+<a href="https://www.lloydsibson.com">https://www.lloydsibson.com</a>
+
+    For the purpose of showcasing my development skills and design standards.
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +92,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

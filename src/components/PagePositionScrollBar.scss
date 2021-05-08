@@ -1,0 +1,42 @@
+@import "../App";
+
+.bar-container {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .bar-container {
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    .bar-container__bar {
+      background: rgb(27, 2, 55);
+      background: -moz-linear-gradient(
+        90deg,
+        rgb(27, 27, 27) 0%,
+        rgba(77, 0, 166, 1) 50%,
+        rgba(106, 0, 224, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        90deg,
+        rgb(27, 27, 27) 0%,
+        rgba(77, 0, 166, 1) 50%,
+        rgba(106, 0, 224, 1) 100%
+      );
+      background: linear-gradient(
+        90deg,
+        rgb(27, 27, 27) 0%,
+        rgba(77, 0, 166, 1) 50%,
+        rgba(106, 0, 224, 1) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b0237",endColorstr="#6a00e0",GradientType=1);
+      width: 0;
+      height: 5px;
+    }
+  }
+}

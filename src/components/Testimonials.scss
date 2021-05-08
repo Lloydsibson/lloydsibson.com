@@ -1,0 +1,109 @@
+@import "../App";
+
+.testomonials-container {
+  .slick-dots li.slick-active {
+    margin: 0 15px 0 5px;
+    button {
+      &:before {
+        background-color: $secondary-color;
+        opacity: 1;
+        width: 30px;
+        height: 4px;
+      }
+    }
+  }
+  .slick-dots li button {
+    width: 20px;
+    height: 3px;
+    &:before {
+      font-size: 0;
+      background-color: #454545;
+      width: 20px;
+      height: 3px;
+      border-radius: 3px;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+    }
+    &:hover:before {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+.testomonials-container {
+  padding-top: 0px;
+  padding-bottom: 75px;
+  h2 {
+    margin: 0;
+    font-size: 1.32rem;
+    margin: 0 0 30px;
+    padding-bottom: 7px;
+    position: relative;
+    display: inline-block;
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 100%;
+      background-color: $secondary-color;
+      height: 2px;
+      bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .testomonials-container {
+    padding-bottom: 60px;
+  }
+}
+
+.review-item {
+  padding: 30px;
+  margin-bottom: 10px;
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    position: relative;
+    padding: 30px 20px 20px 60px;
+    background-color: #282828;
+    border-radius: 8px;
+    border: 2px solid #444;
+    .review-container__text-container {
+      p {
+        font-style: italic;
+        margin-top: 0;
+      }
+    }
+    .review-container__image-container {
+      position: absolute;
+      display: block;
+      top: -30px;
+      left: -30px;
+      width: 80px;
+      height: 80px;
+      background-color: #333;
+      border-radius: 100px;
+    }
+    img {
+      width: 100%;
+      border-radius: 80px;
+      //   border: 3px solid $secondary-color;
+    }
+    .review-container__client-details {
+      h5 {
+        color: #e5e5e5;
+        margin: 0 0 2px;
+        font-size: 0.75rem;
+      }
+      p {
+        margin: 0;
+        font-size: 0.69rem;
+        color: #bbb;
+      }
+    }
+  }
+}

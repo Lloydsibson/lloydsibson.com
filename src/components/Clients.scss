@@ -1,0 +1,57 @@
+@import "../App";
+
+.testomonials-container.clients {
+  padding: 30px 0 0 0;
+  .testomonials-container__title h2 {
+    padding-top: 0px;
+    margin-bottom: 15px;
+  }
+}
+
+.testomonials-container {
+  .slick-dots li.slick-active {
+    margin: 0 15px 0 5px;
+    button {
+      &:before {
+        background-color: $secondary-color;
+        opacity: 1;
+        width: 30px;
+        height: 4px;
+      }
+    }
+  }
+  .slick-dots li button {
+    width: 20px;
+    height: 3px;
+    &:before {
+      font-size: 0;
+      background-color: #454545;
+      width: 20px;
+      height: 3px;
+      border-radius: 3px;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+    }
+    &:hover:before {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+.client-item {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+.client-item h3 {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
