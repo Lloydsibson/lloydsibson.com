@@ -7,12 +7,11 @@ import { PortfolioPage } from "./pages/4-PortfolioPage";
 import { ContactPage } from "./pages/5-ContactPage";
 import CookieConsent from "./components/CookieConsent";
 import { Footer } from "./components/Footer";
-import LoadingScreen from "./components/LoadingScreen";
+// import LoadingScreen from "./components/LoadingScreen";
 
 const App = () => {
   return (
     <>
-      <LoadingScreen />
       <CookieConsent />
       <Router>
         <div className="page-scroll">
@@ -30,6 +29,7 @@ const App = () => {
           </div>
         </div>
       </Router>
+      {/* <LoadingScreen /> */}
     </>
   );
 };

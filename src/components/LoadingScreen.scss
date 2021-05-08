@@ -9,12 +9,13 @@
   @extend %body-backgroundcolor;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -ms-transition: all 1s;
   transition: all 1s;
-  z-index: 9999;
+  z-index: 99999999999;
   opacity: 1;
 }
 

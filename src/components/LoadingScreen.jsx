@@ -9,8 +9,8 @@ class LoadingScreen extends React.Component {
 
   render() {
     return (
-      <div class="loading-screen">
-        <div class="lds-ripple">
+      <div className="loading-screen">
+        <div className="lds-ripple">
           <div></div>
           <div></div>
         </div>
