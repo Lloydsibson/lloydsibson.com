@@ -66,6 +66,7 @@ export const HomePage = () => {
         </div>
       </div>
       <div className="homepage-container__image-container">
+        {/* <div className="hp-image"></div> */}
         <img
           src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620401501/img/logo-homepage.png"
           alt="Monocode Logo"

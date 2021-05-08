@@ -3,8 +3,10 @@ import "./LoadingScreen.scss";
 
 class LoadingScreen extends React.Component {
   componentDidMount() {
-    let loaComp = document.querySelector(".loading-screen");
-    loaComp.classList.add("-show_page");
+    setTimeout(function () {
+      let loaComp = document.querySelector(".loading-screen");
+      loaComp.classList.add("-show_page");
+    }, 3000);
   }
 
   render() {

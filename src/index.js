@@ -5,19 +5,12 @@ import "./App.scss";
 import App from "./App";
 
 // import reportWebVitals from "./reportWebVitals";
-document.addEventListener("DOMContentLoaded", function (event) {
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById("root")
-  );
-
-  // LOADING ICON - LOADS AFTER DOM HAS BEEN LOADED
-  const loadingScreen = document.getElementById("preloader");
-  loadingScreen.style.opacity = 0;
-  loadingScreen.style.zIndex = "-9999";
-});
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
