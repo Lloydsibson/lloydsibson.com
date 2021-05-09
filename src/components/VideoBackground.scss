@@ -76,12 +76,18 @@
 }
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .html-video-container video {
-    transform: scale(4.5);
+  .html-video-container {
+    transform: scale(1.28);
+    video {
+      transform: scale(4.5);
+    }
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 350px) {
-  .html-video-container video {
-    transform: scale(4.5);
+  .html-video-container {
+    transform: scale(1.5);
+    video {
+      transform: scale(4.5);
+    }
   }
 }

@@ -4,42 +4,66 @@
   justify-content: space-between;
   position: relative;
   z-index: 1;
+  padding: 3%;
+  padding-top: 7%;
   .homepage-container__text-container {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 5%;
-    margin-bottom: 60px;
+    text-align: center;
     .text-inner-container {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 20px;
     }
-  }
-  h1 {
-    font-size: 3.4rem;
-    line-height: 56px;
-    margin-bottom: 20px;
-    margin-top: 0;
-    // span {
-    //   display: none;
-    // }
+    h1 {
+      font-size: 6.5rem;
+      line-height: 100px;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 0px;
+      span {
+        display: none;
+      }
+    }
+    #type-text {
+      width: 100%;
+      font-size: 5rem;
+      // display: inline-block;
+      margin-top: 0px;
+      span {
+        border-right: 0.05em solid;
+        animation: caret 1s steps(1) infinite;
+      }
+    }
   }
   h3 {
     margin-top: 0;
     margin-bottom: 20px;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 0.92rem;
   }
   p {
     font-size: 0.88rem;
     line-height: 1.75em;
     color: #d5d5d5;
-    margin: 0;
+    max-width: 396px;
+    text-align: left;
+    margin: 0 auto;
   }
-  .btn-primary {
-    max-width: 163px;
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn-primary {
+      max-width: 163px;
+      width: 100%;
+    }
   }
   .homepage-container__image-container {
     display: flex;
@@ -73,14 +97,6 @@
     -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 80%);
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 80%);
   }
-  // .hp-image {
-  //   width: 100%;
-  //   padding-top: 80%;
-  //   background-image: url("https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620401501/img/logo-homepage.png");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
 }
 
 // #type-text {
@@ -96,36 +112,63 @@
 //   }
 // }
 
+.hp-image {
+  width: 100%;
+  padding-top: 50%;
+  background-image: url("https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620401501/img/logo-homepage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  max-width: 300px;
+  z-index: -1;
+  opacity: 0.3;
+  /* top: -84px; */
+  /* filter: grayscale(1); */
+}
+
+@media only screen and (min-width: 900px) {
+  .homepage.container {
+    .homepage-container__image-container {
+      display: none;
+    }
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .homepage.container {
     .homepage-container__text-container {
       margin-bottom: 0;
     }
-  }
-}
-
-@media only screen and (min-width: 767px) and (max-width: 900px) {
-  .homepage.container {
-    .homepage-container__image-container {
-      margin-bottom: 0;
+    .hp-image {
+      display: none;
     }
   }
 }
 
+// @media only screen and (min-width: 767px) and (max-width: 900px) {
+//   .homepage.container {
+//     .homepage-container__image-container {
+//       margin-bottom: 0;
+//     }
+//   }
+// }
+
 @media only screen and (max-width: 767px) {
   .homepage.container {
-    padding: 0 17px;
+    margin: 0;
+    padding: 0;
     .homepage-container__text-container {
       padding-right: unset;
       width: 100%;
       align-items: center;
       text-align: center;
       h1 {
-        font-size: 2.25rem;
-        line-height: 42px;
+        font-size: 3rem;
+        line-height: 50px;
       }
       p {
-        text-align: left;
+        // text-align: left;
       }
     }
     .homepage-container__image-container {
@@ -150,5 +193,25 @@
         max-width: unset;
       }
     }
+  }
+}
+
+// PAGE CONTAINERS
+.container {
+  display: flex;
+  margin: 5% 10%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    margin: 5% 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
   }
 }

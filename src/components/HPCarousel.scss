@@ -1,0 +1,21 @@
+.hp-title {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-size: 6.5rem;
+    line-height: 100px;
+    margin: 0;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hp-title {
+    h2 {
+      font-size: 3rem;
+      line-height: 50px;
+    }
+  }
+}
