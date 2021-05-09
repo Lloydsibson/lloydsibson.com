@@ -64,7 +64,7 @@
   }
   .tech-stack-logos-container {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     opacity: 0.5;
     position: absolute;
     bottom: 40px;
@@ -73,6 +73,9 @@
     justify-content: space-evenly;
     margin-left: 5px;
     color: $primary-color;
+    svg {
+      font-size: 32px;
+    }
   }
   .contact {
     color: $primary-color;

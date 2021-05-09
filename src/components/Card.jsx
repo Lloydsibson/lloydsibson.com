@@ -11,15 +11,13 @@ export const Card = ({ Image, CardType, CardSubTitle, Icon }) => {
     lightboximage.setAttribute("src", backgroundURL);
 
     // console.log(e.target.previousSibling.previousElementSibling.textContent);
-    if (
-      e.target.previousSibling.previousElementSibling.textContent === "Image"
-    ) {
-      const lightboxContainer = document.querySelector(".lightbox-container");
-      lightboxContainer.classList.toggle("-open");
-    }
 
-    // const lightboxContainer = document.querySelector(".lightbox-container");
-    // lightboxContainer.classList.toggle("-open");
+    // if (
+    //   e.target.previousSibling.previousElementSibling.textContent === "Image"
+    // ) {
+    const lightboxContainer = document.querySelector(".lightbox-container");
+    lightboxContainer.classList.toggle("-open");
+    // }
   };
   return (
     <figure className="card-container">

@@ -1,11 +1,10 @@
 import "./Nav.scss";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import { faSass } from "@fortawesome/free-brands-svg-icons";
-import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faCss3 } from "@fortawesome/free-brands-svg-icons";
-import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faCodepen } from "@fortawesome/free-brands-svg-icons";
+import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import { PagePositionScrollBar } from "./PagePositionScrollBar";
 
 export const Nav = () => {
@@ -33,7 +32,7 @@ export const Nav = () => {
       <ul
         className="nav-container__links-container"
         style={{
-          height: `${window.innerHeight}px`,
+          height: `${window.innerHeight + 1}px`,
           top: `-${window.innerHeight}px`,
         }}
       >
@@ -74,11 +73,18 @@ export const Nav = () => {
           </NavLink>
         </li>
         <div className="tech-stack-logos-container">
-          <FontAwesomeIcon icon={faHtml5} />
-          <FontAwesomeIcon icon={faCss3} />
-          <FontAwesomeIcon icon={faSass} />
-          <FontAwesomeIcon icon={faJsSquare} />
-          <FontAwesomeIcon icon={faReact} />
+          <a href="https://github.com/Lloydsibson">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="https://www.linkedin.com/in/lloyd-sibson/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://codepen.io/lloydsibson/">
+            <FontAwesomeIcon icon={faCodepen} />
+          </a>
+          <a href="https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio?node-id=0%3A1">
+            <FontAwesomeIcon icon={faFigma} />
+          </a>
         </div>
       </ul>
       <div id="nav-icon" onClick={NavToggle}>
