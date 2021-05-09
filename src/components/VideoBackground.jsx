@@ -16,7 +16,7 @@ const VideoBackground = () => {
       >
         <source
           type="video/mp4"
-          src="https://res.cloudinary.com/cloudinary-ls-images/video/upload/q_auto:eco/v1610808503/img/Sunset-hb-vimeo-2k.mp4"
+          src="https://res.cloudinary.com/cloudinary-ls-images/video/upload/q_auto:eco/v1610808503/img/Sunset-hb-vimeo-2k-web.mp4"
         />
       </video>
       {/* <div className="mask"></div> */}

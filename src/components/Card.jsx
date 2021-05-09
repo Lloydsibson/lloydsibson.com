@@ -24,9 +24,9 @@ export const Card = ({ Image, CardType, CardSubTitle, Icon }) => {
   return (
     <figure className="card-container">
       <h4 className="card-container__title">{CardType}</h4>
-      <div className="card-container__card-loading-icon lds-ripple">
-        <div></div>
-        <div></div>
+      <div className="card-container__card-loading-icon spinner">
+        <div className="double-bounce1"></div>
+        <div className="double-bounce2"></div>
       </div>
       <div
         onClick={(e) => lightboxToggle(e)}

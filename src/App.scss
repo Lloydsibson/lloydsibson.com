@@ -139,36 +139,52 @@ body {
 }
 
 // CSS LOADING ICON - RIPPLE EFFECT
-.lds-ripple {
-  display: inline-block;
-  position: relative;
+.spinner {
   width: 80px;
   height: 80px;
+  position: relative;
 }
-.lds-ripple div {
+
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15%;
+  // border-radius: 50%;
+  background-color: $primary-color;
+  opacity: 0.6;
   position: absolute;
-  border: 4px solid #fff;
-  opacity: 1;
-  border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
 }
-.lds-ripple div:nth-child(2) {
-  animation-delay: -0.5s;
+
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
-@keyframes lds-ripple {
-  0% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
+
+@-webkit-keyframes sk-bounce {
+  0%,
   100% {
-    top: 0px;
-    left: 0px;
-    width: 72px;
-    height: 72px;
-    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
   }
 }
 
@@ -346,7 +362,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(https://lmpixels.com/wp/leven-wp/dark/wp-content/uploads/sites/4/2019/12/main_bg_14.png);
+  background-image: url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620550827/img/main_bg.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

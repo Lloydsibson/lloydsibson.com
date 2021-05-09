@@ -60,6 +60,10 @@ export class Testimonials extends Component {
                   src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1583323291/img/cam-review.jpg"
                   alt="Reviewer"
                 />
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
               </div>
               <div className="review-container__text-container">
                 <p>
@@ -80,6 +84,10 @@ export class Testimonials extends Component {
                   src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1583323291/img/bea-review.jpg"
                   alt="Reviewer"
                 />
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
               </div>
               <div className="review-container__text-container">
                 <p>
@@ -100,6 +108,10 @@ export class Testimonials extends Component {
                   src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1579535402/img/j-review.jpg"
                   alt="Reviewer"
                 />
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
               </div>
               <div className="review-container__text-container">
                 <p>

@@ -35,9 +35,9 @@ export const AboutPage = () => {
                   "url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620398786/img/profile-pic-large.jpg)",
               }}
             ></div>
-            <div className="lds-ripple">
-              <div></div>
-              <div></div>
+            <div class="spinner">
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
             </div>
           </div>
         </div>
