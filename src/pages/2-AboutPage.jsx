@@ -177,10 +177,10 @@ export const AboutPage = () => {
             {/*  */}
             <div className="skills-inner-container__skill-title-container">
               <h4>JavaScript</h4>
-              <div className="skill-value">65%</div>
+              <div className="skill-value">70%</div>
             </div>
             <div className="skills-inner-container__skill-percentage-container">
-              <div className="skill-percentage" style={{ width: "65%" }}></div>
+              <div className="skill-percentage" style={{ width: "70%" }}></div>
             </div>
             {/*  */}
             <div className="skills-inner-container__skill-title-container">
