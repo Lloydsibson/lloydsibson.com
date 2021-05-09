@@ -2,7 +2,7 @@
 
 .content-container {
   display: flex;
-  align-items: end;
+  align-items: flex-start;
   justify-content: space-between;
   .content-container__contact-details-container {
     width: 38%;
