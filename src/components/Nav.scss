@@ -143,6 +143,7 @@
     .nav-container__links-container {
       margin: 0;
       position: absolute;
+      transform: translateZ(0);
       height: 100vh;
       left: 0;
       top: -100vh;
