@@ -77,7 +77,7 @@ export const PortfolioPage = () => {
     <>
       <div className="page-title-container">
         <h1>Portfolio</h1>
-        <p>Recent Examples...</p>
+        <p>Latest Examples</p>
         {/* <p>Previous Work</p> */}
       </div>
       <div className="portfolio-container">
