@@ -70,8 +70,10 @@ export const EmailForm = () => {
   return (
     <div className="email-form-container">
       <form
+        name="contact-form"
+        data-netlify="true"
         onSubmit={(e) => onSubmitCheckForm(e)}
-        action="https://formspree.io/f/mrgorgwn"
+        // action="https://formspree.io/f/mrgorgwn"
         method="POST"
       >
         <div className="fs-contact-form-container__inner-container">
