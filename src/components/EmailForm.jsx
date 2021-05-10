@@ -71,7 +71,7 @@ export const EmailForm = () => {
     <div className="email-form-container">
       <form
         name="contact-form"
-        data-netlify="true"
+        netlify
         onSubmit={(e) => onSubmitCheckForm(e)}
         // action="https://formspree.io/f/mrgorgwn"
         method="POST"
