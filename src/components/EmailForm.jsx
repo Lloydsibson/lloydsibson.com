@@ -71,13 +71,16 @@ export const EmailForm = () => {
     <div className="email-form-container">
       <form
         name="contact-form"
-        method="POST"
+        method="post"
         onSubmit={(e) => onSubmitCheckForm(e)}
         // data-netlify-recaptcha="true"
         // data-netlify="true"
         // netlify-honeypot="bot-field"
         // action="https://formspree.io/f/mrgorgwn"
       >
+        {/* NETLIFY FORM */}
+        <input type="hidden" name="form-name" value="contact-form" />
+        {/* ---- */}
         <div className="fs-contact-form-container__inner-container">
           <div className="contact-info-container">
             <label>
