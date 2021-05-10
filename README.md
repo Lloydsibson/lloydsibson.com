@@ -23,6 +23,8 @@
 
     For the purpose of showcasing my development skills and design standards.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9dc98e7-7af7-436a-b394-a75868d558cd/deploy-status)](https://app.netlify.com/sites/lloydsibson/deploys)
+
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
