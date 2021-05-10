@@ -71,7 +71,9 @@ export const EmailForm = () => {
     <div className="email-form-container">
       <form
         name="contact-form"
-        netlify
+        // data-netlify-recaptcha="true"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
         onSubmit={(e) => onSubmitCheckForm(e)}
         // action="https://formspree.io/f/mrgorgwn"
         method="POST"
@@ -148,7 +150,7 @@ export const EmailForm = () => {
             </label>
           </div>
 
-          <input type="text" name="_gotcha" hidden />
+          {/* <input type="text" name="_gotcha" hidden /> */}
           <input
             type="text"
             name="privacy-policy"
@@ -182,6 +184,7 @@ export const EmailForm = () => {
             </p>
           </label>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <div className="submit-container">
           <button className="btn-primary-two" type="submit">
             Send Message
@@ -200,3 +203,9 @@ export const EmailForm = () => {
     </div>
   );
 };
+
+<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name"></input>
+  <input type="email" name="email" />
+  <textarea name="message"></textarea>
+</form>;
