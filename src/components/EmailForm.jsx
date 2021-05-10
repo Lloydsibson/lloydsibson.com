@@ -71,12 +71,12 @@ export const EmailForm = () => {
     <div className="email-form-container">
       <form
         name="contact-form"
-        // data-netlify-recaptcha="true"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        onSubmit={(e) => onSubmitCheckForm(e)}
-        // action="https://formspree.io/f/mrgorgwn"
         method="POST"
+        onSubmit={(e) => onSubmitCheckForm(e)}
+        // data-netlify-recaptcha="true"
+        // data-netlify="true"
+        // netlify-honeypot="bot-field"
+        // action="https://formspree.io/f/mrgorgwn"
       >
         <div className="fs-contact-form-container__inner-container">
           <div className="contact-info-container">
@@ -97,7 +97,8 @@ export const EmailForm = () => {
               <input
                 required
                 type="email"
-                name="_replyto"
+                name="email"
+                // name="_replyto"
                 placeholder="Email Address"
                 onChange={(e) => handleEmailChange(e)}
                 value={formEmail}
@@ -203,9 +204,3 @@ export const EmailForm = () => {
     </div>
   );
 };
-
-<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name"></input>
-  <input type="email" name="email" />
-  <textarea name="message"></textarea>
-</form>;
