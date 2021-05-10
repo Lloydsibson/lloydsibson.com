@@ -44,7 +44,7 @@ export const AboutPage = () => {
       </div>
       <div className="services-container">
         <div className="services-container__title">
-          <h2>What I do</h2>
+          <h2>What I Do</h2>
         </div>
         <div className="services-container__services">
           <div className="service-container">
