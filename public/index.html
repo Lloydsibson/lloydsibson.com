@@ -1,36 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- GOOGLE ANALYTICS - Global site tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-138592910-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-138592910-1");
-    </script>
-    <!-- HOTJAR TRACKING CODE FOR www.lloydsibson.com -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2189120, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
-
 <!-- General Meta Tags -->
 <meta charset="utf-8" />
 <meta
@@ -98,17 +68,17 @@
 <meta name="msapplication-TileColor" content="#6700da" />
 <meta name="theme-color" content="#6700da" />
 <!-- Stops auto zoom ability on inputs - Safari -->
-<meta
+<!-- <meta
   name="viewport"
   content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-></meta>
+></meta> -->
 <!-- Tells Search Engines this is the main page -->
 <link rel="canonical" href="https://lloydsibson.com" />
 <title>Lloyd Sibson - Front End Developer & Designer</title>
   </head>
   <body>
     <div class="netlify-form">
-      <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
+      <form name="contact-form" netlify netlify-honeypot="bot-field" action="/#/contact/form-success" hidden>
         <input type="text" name="name"></input>
         <input type="email" name="email" />
         <input type="text" name="subject" />

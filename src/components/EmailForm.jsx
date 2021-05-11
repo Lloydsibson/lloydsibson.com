@@ -73,9 +73,6 @@ export const EmailForm = () => {
         name="contact-form"
         method="post"
         onSubmit={(e) => onSubmitCheckForm(e)}
-        // data-netlify-recaptcha="true"
-        // data-netlify="true"
-        // netlify-honeypot="bot-field"
         // action="https://formspree.io/f/mrgorgwn"
       >
         {/* NETLIFY FORM */}
