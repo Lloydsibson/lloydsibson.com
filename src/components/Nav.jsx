@@ -47,12 +47,6 @@ export const Nav = () => {
           </NavLink>
         </li>
         <li>
-          {/* <a href="#Offline">About Me</a> */}
-          <NavLink to={"/about"} onClick={NavToggle} activeClassName="selected">
-            About
-          </NavLink>
-        </li>
-        <li>
           {/* <a href="#Offline">Portfolio</a> */}
           <NavLink
             to={"/portfolio"}
@@ -60,6 +54,12 @@ export const Nav = () => {
             activeClassName="selected"
           >
             Portfolio
+          </NavLink>
+        </li>
+        <li>
+          {/* <a href="#Offline">About Me</a> */}
+          <NavLink to={"/about"} onClick={NavToggle} activeClassName="selected">
+            About
           </NavLink>
         </li>
         <li>
