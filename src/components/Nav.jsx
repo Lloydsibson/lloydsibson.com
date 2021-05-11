@@ -47,7 +47,6 @@ export const Nav = () => {
           </NavLink>
         </li>
         <li>
-          {/* <a href="#Offline">Portfolio</a> */}
           <NavLink
             to={"/portfolio"}
             onClick={NavToggle}
@@ -57,7 +56,6 @@ export const Nav = () => {
           </NavLink>
         </li>
         <li>
-          {/* <a href="#Offline">About Me</a> */}
           <NavLink to={"/about"} onClick={NavToggle} activeClassName="selected">
             About
           </NavLink>
