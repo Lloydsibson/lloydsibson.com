@@ -36,20 +36,20 @@ export const PortfolioPage = () => {
       cardSubTitle: "Photoshop & Printful",
       icon: faSearchPlus,
     },
-    {
-      image:
-        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013440/img/portfolio/jmgb.png",
-      cardType: "JMGB Logo",
-      cardSubTitle: "Adobe Photoshop",
-      icon: faSearchPlus,
-    },
-    {
-      image:
-        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/reawaken-eventbrite-banner-new-version.png",
-      cardType: "Eventbrite Banner",
-      cardSubTitle: "Adobe Photoshop",
-      icon: faSearchPlus,
-    },
+    // {
+    //   image:
+    //     "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013440/img/portfolio/jmgb.png",
+    //   cardType: "JMGB Logo",
+    //   cardSubTitle: "Adobe Photoshop",
+    //   icon: faSearchPlus,
+    // },
+    // {
+    //   image:
+    //     "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/reawaken-eventbrite-banner-new-version.png",
+    //   cardType: "Eventbrite Banner",
+    //   cardSubTitle: "Adobe Photoshop",
+    //   icon: faSearchPlus,
+    // },
     {
       image:
         "https://images.squarespace-cdn.com/content/v1/5db41714f991e52a4904af5f/1606669957396-6HM6WHW3K5OYB047L1QY/ke17ZwdGBToddI8pDm48kPJXHKy2-mnvrsdpGQjlhod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmihaE5rlzFBImxTetd_yW5btdZx37rH5fuWDtePBPDaHF5LxdCVHkNEqSYPsUQCdT/mockup-62011df2.jpg?format=800w",
@@ -57,13 +57,13 @@ export const PortfolioPage = () => {
       cardSubTitle: "Photoshop & Printful",
       icon: faSearchPlus,
     },
-    {
-      image:
-        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1595526500/img/rac-logo.png",
-      cardType: "RAC Logo",
-      cardSubTitle: "Adobe Photoshop",
-      icon: faSearchPlus,
-    },
+    // {
+    //   image:
+    //     "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1595526500/img/rac-logo.png",
+    //   cardType: "RAC Logo",
+    //   cardSubTitle: "Adobe Photoshop",
+    //   icon: faSearchPlus,
+    // },
     {
       image:
         "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013643/img/portfolio/amo-cards.png",

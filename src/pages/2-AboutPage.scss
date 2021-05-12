@@ -131,6 +131,7 @@
 
 .skills-container {
   display: flex;
+  padding-top: 10px;
   .skills-container__design-skills-container,
   .skills-container__dev-skills-container {
     width: 50%;
@@ -206,6 +207,44 @@
   }
 }
 
+.tech-stack-container {
+  padding-top: 40px;
+  h2 {
+    margin: 0;
+    font-size: 1.32rem;
+    margin: 0 0 30px;
+    padding-bottom: 7px;
+    position: relative;
+    display: inline-block;
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 100%;
+      background-color: $secondary-color;
+      height: 2px;
+      bottom: 0;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.tech-stack-container__info-container {
+  display: flex;
+  .tech-container {
+    width: 33.333%;
+    h5 {
+      font-size: 1rem;
+      margin: 7px 0 0 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .cv-hero-container {
     flex-direction: column-reverse;
@@ -214,6 +253,12 @@
     }
     .cv-hero-container__image {
       width: 100%;
+    }
+  }
+  .tech-stack-container__info-container {
+    flex-wrap: wrap;
+    .tech-container {
+      width: 50%;
     }
   }
 }
@@ -231,11 +276,19 @@
     flex-direction: column;
     .skills-container__design-skills-container {
       padding-right: 0;
-      padding-bottom: 30px;
+      padding-bottom: 40px;
       width: 100%;
     }
     .skills-container__dev-skills-container {
       padding-left: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .tech-stack-container__info-container {
+    .tech-container {
       width: 100%;
     }
   }

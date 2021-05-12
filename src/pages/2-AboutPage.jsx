@@ -112,7 +112,6 @@ export const AboutPage = () => {
           <div className="skills-title-container">
             <h2>Design Skills</h2>
           </div>
-          {/*  */}
           <div className="skills-inner-container">
             <div className="skills-inner-container__skill-title-container">
               <h4>Graphic Design</h4>
@@ -122,7 +121,6 @@ export const AboutPage = () => {
               <div className="skill-percentage" style={{ width: "90%" }}></div>
             </div>
 
-            {/*  */}
             <div className="skills-inner-container__skill-title-container">
               <h4>UI Design</h4>
               <div className="skill-value">60%</div>
@@ -130,8 +128,6 @@ export const AboutPage = () => {
             <div className="skills-inner-container__skill-percentage-container">
               <div className="skill-percentage" style={{ width: "60%" }}></div>
             </div>
-
-            {/*  */}
 
             <div className="skills-inner-container__skill-title-container">
               <h4>Print Design</h4>
@@ -141,7 +137,6 @@ export const AboutPage = () => {
               <div className="skill-percentage" style={{ width: "75%" }}></div>
             </div>
 
-            {/*  */}
             <div className="skills-inner-container__skill-title-container">
               <h4>Logo Design</h4>
               <div className="skill-value">80%</div>
@@ -150,14 +145,11 @@ export const AboutPage = () => {
               <div className="skill-percentage" style={{ width: "80%" }}></div>
             </div>
           </div>
-          {/*  */}
         </div>
         <div className="skills-container__dev-skills-container">
-          {" "}
           <div className="skills-title-container">
             <h2>Developer Skills</h2>
           </div>
-          {/*  */}
           <div className="skills-inner-container">
             <div className="skills-inner-container__skill-title-container">
               <h4>HTML/CSS</h4>
@@ -166,7 +158,7 @@ export const AboutPage = () => {
             <div className="skills-inner-container__skill-percentage-container">
               <div className="skill-percentage" style={{ width: "90%" }}></div>
             </div>
-            {/*  */}
+
             <div className="skills-inner-container__skill-title-container">
               <h4>SASS</h4>
               <div className="skill-value">55%</div>
@@ -174,7 +166,7 @@ export const AboutPage = () => {
             <div className="skills-inner-container__skill-percentage-container">
               <div className="skill-percentage" style={{ width: "55%" }}></div>
             </div>
-            {/*  */}
+
             <div className="skills-inner-container__skill-title-container">
               <h4>JavaScript</h4>
               <div className="skill-value">70%</div>
@@ -182,7 +174,7 @@ export const AboutPage = () => {
             <div className="skills-inner-container__skill-percentage-container">
               <div className="skill-percentage" style={{ width: "70%" }}></div>
             </div>
-            {/*  */}
+
             <div className="skills-inner-container__skill-title-container">
               <h4>React</h4>
               <div className="skill-value">50%</div>
@@ -191,7 +183,74 @@ export const AboutPage = () => {
               <div className="skill-percentage" style={{ width: "50%" }}></div>
             </div>
           </div>
-          {/*  */}
+        </div>
+      </div>
+      <div className="tech-stack-container">
+        <div className="services-container__title">
+          <h2>Current Tech Stack</h2>
+        </div>
+        <div className="tech-stack-container__info-container">
+          <div className="tech-container">
+            <div className="tech-container__tech-info">
+              <h5>Github</h5>
+              <p>Version Control</p>
+            </div>
+            <div className="tech-container__tech-info">
+              <h5>React</h5>
+              <p>UI Library</p>
+            </div>
+            <div className="tech-container__tech-info">
+              <h5>SASS</h5>
+              <p>CSS Preprocessor</p>
+            </div>
+          </div>
+
+          <div className="tech-container">
+            <div className="tech-container__tech-info">
+              <h5>Webpack</h5>
+              <p>Module Bundler</p>
+            </div>
+            <div className="tech-container__tech-info">
+              <h5>Netlify</h5>
+              <p>CI/CD</p>
+            </div>
+            <div className="tech-container__tech-info">
+              <h5>Cloudflare</h5>
+              <p>Internet Security</p>
+            </div>
+          </div>
+
+          <div className="tech-container">
+            <div className="tech-container__tech-info">
+              <h5>Hotjar</h5>
+              <p>Heat Maps (UX)</p>
+            </div>
+            <div className="tech-container__tech-info">
+              <h5>Sentry </h5>
+              <p>Error Handling</p>
+            </div>
+            <div className="tech-container__tech-info">
+              <h5>G. Analytics</h5>
+              <p>Trends (UX)</p>
+            </div>
+          </div>
+
+          <div className="tech-container">
+            <div className="tech-container__tech-info">
+              <h5>Cloudinary</h5>
+              <p>Image CDN</p>
+            </div>
+
+            <div className="tech-container__tech-info">
+              <h5>Node</h5>
+              <p>Server Enviroment</p>
+            </div>
+
+            <div className="tech-container__tech-info">
+              <h5>Figma</h5>
+              <p>Designing (UI)</p>
+            </div>
+          </div>
         </div>
       </div>
       <Clients />
