@@ -59,8 +59,10 @@ export const ContactPage = () => {
             </div>
           </div>
         </div>
-
-        <div className="content-container__message-container">
+        <div
+          className="content-container__message-container"
+          onClick={methodDoesNotExist}
+        >
           <h2>How Can I Help You?</h2>
           <EmailForm />
         </div>
