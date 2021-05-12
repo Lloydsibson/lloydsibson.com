@@ -15,6 +15,7 @@
     // border: 2px solid $primary-color;
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
     &:hover {
+      cursor: pointer;
       .card-container__subtitle {
         opacity: 1;
       }
@@ -108,9 +109,9 @@
         height: 22px;
         color: $primary-color;
       }
-      &:hover {
-        background-color: $secondary-color;
-      }
+      // &:hover {
+      //   background-color: $secondary-color;
+      // }
     }
   }
 }
