@@ -47,17 +47,13 @@
   }
 }
 
-.portfolio-container__links-container .link-container:nth-child(2) {
-  margin-top: 0;
-}
-
 @media only screen and (max-width: 900px) {
   .portfolio-container__filters-container {
     ul {
       justify-content: center;
     }
   }
-  .portfolio-container .subheading-container:nth-child(n + 1) {
-    margin-top: -20px;
+  .portfolio-container .portfolio-container__links-container {
+    padding-top: 20px;
   }
 }
