@@ -178,3 +178,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .content-container {
+    .email-form-container {
+      .submit-container {
+        button {
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+}

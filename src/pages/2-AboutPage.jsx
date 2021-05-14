@@ -35,15 +35,15 @@ export const AboutPage = () => {
                   "url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620398786/img/profile-pic-large.jpg)",
               }}
             ></div>
-            <div class="spinner">
-              <div class="double-bounce1"></div>
-              <div class="double-bounce2"></div>
+            <div className="spinner">
+              <div className="double-bounce1"></div>
+              <div className="double-bounce2"></div>
             </div>
           </div>
         </div>
       </div>
       <div className="services-container">
-        <div className="services-container__title">
+        <div className="subheading-container">
           <h2>What I Do</h2>
         </div>
         <div className="services-container__services">
@@ -109,7 +109,7 @@ export const AboutPage = () => {
       </div>
       <div className="skills-container">
         <div className="skills-container__design-skills-container">
-          <div className="skills-title-container">
+          <div className="subheading-container">
             <h2>Design Skills</h2>
           </div>
           <div className="skills-inner-container">
@@ -147,7 +147,7 @@ export const AboutPage = () => {
           </div>
         </div>
         <div className="skills-container__dev-skills-container">
-          <div className="skills-title-container">
+          <div className="subheading-container">
             <h2>Developer Skills</h2>
           </div>
           <div className="skills-inner-container">
@@ -186,8 +186,8 @@ export const AboutPage = () => {
         </div>
       </div>
       <div className="tech-stack-container">
-        <div className="services-container__title">
-          <h2>Current Tech Stack</h2>
+        <div className="subheading-container">
+          <h2>Website Tech Stack</h2>
         </div>
         <div className="tech-stack-container__info-container">
           <div className="tech-container">

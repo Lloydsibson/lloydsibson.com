@@ -89,7 +89,7 @@ export const EmailForm = () => {
                 placeholder="Full Name"
                 onChange={(e) => handleNameChange(e)}
                 value={formName}
-              ></input>
+              />
             </label>
 
             <label>
@@ -102,7 +102,7 @@ export const EmailForm = () => {
                 placeholder="Email Address"
                 onChange={(e) => handleEmailChange(e)}
                 value={formEmail}
-              ></input>
+              />
             </label>
 
             {/* <select
@@ -147,7 +147,7 @@ export const EmailForm = () => {
                 placeholder="Subject"
                 onChange={(e) => handleSubjectChange(e)}
                 value={formSubject}
-              ></input>
+              />
             </label>
           </div>
 
@@ -156,8 +156,7 @@ export const EmailForm = () => {
             type="text"
             name="privacy-policy"
             id="form-pp"
-            hidden
-            style={{ color: "black" }}
+            style={{ color: "black", display: "none" }}
           />
 
           <div className="contact-message-container">
@@ -169,7 +168,7 @@ export const EmailForm = () => {
                 placeholder="Message"
                 onChange={(e) => handleMessageChange(e)}
                 value={formMessage}
-              ></textarea>
+              />
             </label>
           </div>
         </div>

@@ -23,23 +23,22 @@ body #cookie-message.-close {
   transition: 0.7s all ease-out, opacity 500ms ease-in-out;
 }
 #cookie-message #cookie-accept {
-  font-size: 0.8rem;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background-color: transparent;
   border: 2px solid $secondary-color;
-  color: $primary-color;
-  padding: 0.5rem;
-  border-radius: 50px;
-  font-weight: 400;
-  display: block;
   padding: 0.8em 2.1em;
-  -moz-transition: color 0.3s ease-out, opacity 0.3s ease-out;
-  -o-transition: color 0.3s ease-out, opacity 0.3s ease-out;
-  -webkit-transition: color 0.3s ease-out, opacity 0.3s ease-out;
-  transition: color 0.3s ease-out, opacity 0.3s ease-out;
+  margin-bottom: 0;
+  line-height: 1.2;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+  display: block;
+  text-align: center;
+  font-weight: 400;
 }
 #cookie-message #cookie-accept:hover {
   background-color: $secondary-color;
+  cursor: pointer;
 }
 #cookie-message .cookie-container {
   display: flex;
@@ -94,5 +93,11 @@ body #cookie-message.-close {
   .cookie-container__cookies-left,
   .cookie-container__cookies-right {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #cookie-message #cookie-accept {
+    line-height: 1.7;
   }
 }

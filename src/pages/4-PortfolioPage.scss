@@ -1,5 +1,9 @@
 @import "../App.scss";
 
+.portfolio-container .subheading-container:first-child {
+  padding-top: 0;
+}
+
 .portfolio-container__filters-container {
   margin: 0 0 2em;
   ul {
@@ -25,10 +29,35 @@
   flex-wrap: wrap;
 }
 
+.portfolio-container__links-container {
+  padding-top: 40px;
+  .link-container {
+    margin-top: 5px;
+    line-height: normal;
+    a {
+      display: inline-block;
+      border-bottom: 1px solid #fff;
+      opacity: 0.55;
+      font-size: 0.88rem;
+      &:hover {
+        opacity: 1;
+        border-color: $secondary-color;
+      }
+    }
+  }
+}
+
+.portfolio-container__links-container .link-container:nth-child(2) {
+  margin-top: 0;
+}
+
 @media only screen and (max-width: 900px) {
   .portfolio-container__filters-container {
     ul {
       justify-content: center;
     }
+  }
+  .portfolio-container .subheading-container:nth-child(n + 2) {
+    margin-top: -20px;
   }
 }

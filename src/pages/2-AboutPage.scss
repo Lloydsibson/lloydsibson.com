@@ -66,23 +66,6 @@
 
 .services-container {
   padding-top: 50px;
-  h2 {
-    margin: 0;
-    font-size: 1.32rem;
-    margin: 0 0 30px;
-    padding-bottom: 7px;
-    position: relative;
-    display: inline-block;
-    &:before {
-      display: block;
-      position: absolute;
-      content: "";
-      width: 100%;
-      background-color: $secondary-color;
-      height: 2px;
-      bottom: 0;
-    }
-  }
   .services-container__services {
     display: flex;
     flex-wrap: wrap;
@@ -135,25 +118,6 @@
   .skills-container__design-skills-container,
   .skills-container__dev-skills-container {
     width: 50%;
-    .skills-title-container {
-      h2 {
-        margin: 0;
-        font-size: 1.32rem;
-        margin: 0 0 30px;
-        padding-bottom: 7px;
-        position: relative;
-        display: inline-block;
-        &:before {
-          display: block;
-          position: absolute;
-          content: "";
-          width: 100%;
-          background-color: $secondary-color;
-          height: 2px;
-          bottom: 0;
-        }
-      }
-    }
     .skills-inner-container__skill-title-container {
       display: flex;
       align-items: center;
@@ -209,26 +173,6 @@
 
 .tech-stack-container {
   padding-top: 40px;
-  h2 {
-    margin: 0;
-    font-size: 1.32rem;
-    margin: 0 0 30px;
-    padding-bottom: 7px;
-    position: relative;
-    display: inline-block;
-    &:before {
-      display: block;
-      position: absolute;
-      content: "";
-      width: 100%;
-      background-color: $secondary-color;
-      height: 2px;
-      bottom: 0;
-      p {
-        margin: 0;
-      }
-    }
-  }
 }
 
 .tech-stack-container__info-container {
@@ -238,6 +182,7 @@
     h5 {
       font-size: 1rem;
       margin: 7px 0 0 0;
+      font-weight: 600;
     }
     p {
       margin: 0;

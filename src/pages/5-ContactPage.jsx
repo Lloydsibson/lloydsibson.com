@@ -60,7 +60,9 @@ export const ContactPage = () => {
           </div>
         </div>
         <div className="content-container__message-container">
-          <h2>How Can I Help You?</h2>
+          <div className="subheading-container">
+            <h2>How Can I Help You?</h2>
+          </div>
           <EmailForm />
         </div>
       </div>

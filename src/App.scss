@@ -408,6 +408,14 @@ a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .btn-primary {
+    a {
+      line-height: 1.7;
+    }
+  }
+}
+
 // FOR ONES WITH NO A LINK NESTED INSIDE
 .btn-primary-two {
   margin-top: 27px;
@@ -426,6 +434,28 @@ a {
   &:hover {
     background-color: $secondary-color;
     cursor: pointer;
+  }
+}
+
+// SITE SUBHEADING
+.subheading-container {
+  // padding-top: 40px;
+  h2 {
+    margin: 0;
+    font-size: 1.32rem;
+    margin: 0 0 30px;
+    padding-bottom: 7px;
+    position: relative;
+    display: inline-block;
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 100%;
+      background-color: $secondary-color;
+      height: 2px;
+      bottom: 0;
+    }
   }
 }
 

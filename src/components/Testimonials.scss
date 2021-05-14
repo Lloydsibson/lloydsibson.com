@@ -35,23 +35,6 @@
 .testomonials-container {
   padding-top: 0px;
   padding-bottom: 75px;
-  h2 {
-    margin: 0;
-    font-size: 1.32rem;
-    margin: 0 0 30px;
-    padding-bottom: 7px;
-    position: relative;
-    display: inline-block;
-    &:before {
-      display: block;
-      position: absolute;
-      content: "";
-      width: 100%;
-      background-color: $secondary-color;
-      height: 2px;
-      bottom: 0;
-    }
-  }
 }
 
 @media only screen and (max-width: 500px) {
