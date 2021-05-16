@@ -68,6 +68,11 @@
 }
 
 /* CUSTOM CHECKBOX */
+
+#form-pp {
+  display: none;
+}
+
 .form-pp-container.error {
   border-color: $secondary-color;
   max-width: 360px;

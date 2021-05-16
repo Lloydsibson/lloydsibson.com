@@ -14,9 +14,9 @@ export const EmailForm = () => {
   const checkCheckBox = (e) => {
     const contactFormPrivacyPolicy = document.getElementById("form-pp");
     const formPPContainer = document.querySelector(".form-pp-container");
-    if (e.target.checked === true) {
+    if (e.currentTarget.checked === true) {
       console.log("true");
-      contactFormPrivacyPolicy.value = "Accepted";
+      contactFormPrivacyPolicy.value += "Accepted";
       formPPContainer.classList.remove("error");
     } else {
       console.log("false");
@@ -105,6 +105,11 @@ export const EmailForm = () => {
               />
             </label>
 
+            <label>
+              Policy Acceptance:
+              <input type="text" name="privacy-policy" id="form-pp" />
+            </label>
+
             {/* <select
             name="contact-type"
             required
@@ -152,12 +157,6 @@ export const EmailForm = () => {
           </div>
 
           {/* <input type="text" name="_gotcha" hidden /> */}
-          <input
-            type="text"
-            name="privacy-policy"
-            id="form-pp"
-            style={{ color: "black", display: "none" }}
-          />
 
           <div className="contact-message-container">
             <label>
