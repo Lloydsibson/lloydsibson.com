@@ -14,7 +14,6 @@ export const EmailForm = () => {
   // );
 
   // GOOGLE CAPTCHA - KEY IN NETLIFY ENVIRONMENT VARIBLE
-  const RECAPTCHA_KEY = "6Ldq0dcaAAAAAAVvxfX_Etiggl5ORlQjVvDofzeA";
   const [buttonDisabled, setButtonDisabled] = useState(true);
   //
   const checkCheckBox = (e) => {
@@ -178,7 +177,6 @@ export const EmailForm = () => {
 
         <div className="v-container">
           <Recaptcha
-            sitekey={RECAPTCHA_KEY}
             size="normal"
             theme="dark"
             tabindex
