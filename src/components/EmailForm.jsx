@@ -14,7 +14,7 @@ export const EmailForm = () => {
   // );
 
   // GOOGLE CAPTCHA - KEY IN NETLIFY ENVIRONMENT VARIBLE
-  const RECAPTCHA_KEY = "";
+  const RECAPTCHA_KEY = "6Ldq0dcaAAAAAAVvxfX_Etiggl5ORlQjVvDofzeA";
   const [buttonDisabled, setButtonDisabled] = useState(true);
   //
   const checkCheckBox = (e) => {
