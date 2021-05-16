@@ -27,7 +27,7 @@ export const EmailForm = () => {
     const contactFormPrivacyPolicy = document.getElementById("form-pp");
     const formPPContainer = document.querySelector(".form-pp-container");
     if (contactFormPrivacyPolicy.value === "Accepted") {
-      contactFormPrivacyPolicy.value = "";
+      // DO NOTHING
     } else {
       formPPContainer.classList.add("error");
       e.preventDefault();
@@ -105,11 +105,6 @@ export const EmailForm = () => {
               />
             </label>
 
-            <label>
-              Policy Acceptance:
-              <input type="text" name="privacy-policy" id="form-pp" />
-            </label>
-
             {/* <select
             name="contact-type"
             required
@@ -155,7 +150,7 @@ export const EmailForm = () => {
               />
             </label>
           </div>
-
+          <input type="text" name="privacy-policy" id="form-pp" hidden />
           {/* <input type="text" name="_gotcha" hidden /> */}
 
           <div className="contact-message-container">
