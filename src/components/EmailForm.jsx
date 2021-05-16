@@ -13,8 +13,8 @@ export const EmailForm = () => {
   //   "Interested In? (Optional)"
   // );
 
-  // GOOGLE CAPTCHA
-  const RECAPTCHA_KEY = "6Ldq0dcaAAAAAAVvxfX_Etiggl5ORlQjVvDofzeA";
+  // GOOGLE CAPTCHA - KEY IN NETLIFY ENVIRONMENT VARIBLE
+  const RECAPTCHA_KEY = "";
   const [buttonDisabled, setButtonDisabled] = useState(true);
   //
   const checkCheckBox = (e) => {
@@ -185,8 +185,8 @@ export const EmailForm = () => {
             id="recaptcha-google"
             onChange={() => setButtonDisabled(false)}
             // callback={}
-            expired-callback={() => setButtonDisabled(true)}
-            error-callback={() => setButtonDisabled(true)}
+            onExpired={() => setButtonDisabled(true)}
+            onErrored={() => setButtonDisabled(true)}
           />
 
           {/* CUSTOM CHECKBOX FOR PP */}

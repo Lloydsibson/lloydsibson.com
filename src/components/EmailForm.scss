@@ -86,9 +86,10 @@
 
 .form-pp-container.error {
   border-color: $secondary-color;
-  max-width: 360px;
 }
 .form-pp-container {
+  display: flex;
+  align-items: center;
   border: 2px solid;
   border-color: transparent;
   border-radius: 10px;
