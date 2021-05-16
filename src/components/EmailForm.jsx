@@ -15,7 +15,6 @@ export const EmailForm = () => {
 
   // GOOGLE CAPTCHA
   const RECAPTCHA_KEY = "6Ldq0dcaAAAAAAVvxfX_Etiggl5ORlQjVvDofzeA";
-  // 6Ldq0dcaAAAAABTkooDAonTulHBiEa4p1BFWB_hD
   const [buttonDisabled, setButtonDisabled] = useState(true);
   //
   const checkCheckBox = (e) => {
@@ -177,29 +176,31 @@ export const EmailForm = () => {
           </div>
         </div>
 
-        {/* CUSTOM CHECKBOX FOR PP */}
-        <div className="form-pp-container">
-          <label className="control checkbox">
-            <input type="checkbox" onChange={(e) => checkCheckBox(e)} />
-            <span className="control-indicator"></span>
-            <p>
-              I understand that Monocode will securely hold my data in
-              accordance with their privacy policy.
-            </p>
-          </label>
-        </div>
+        <div className="v-container">
+          <Recaptcha
+            sitekey={RECAPTCHA_KEY}
+            size="normal"
+            theme="dark"
+            tabindex
+            id="recaptcha-google"
+            onChange={() => setButtonDisabled(false)}
+            // callback={}
+            expired-callback={() => setButtonDisabled(true)}
+            error-callback={() => setButtonDisabled(true)}
+          />
 
-        <Recaptcha
-          sitekey={RECAPTCHA_KEY}
-          size="normal"
-          theme="dark"
-          tabindex
-          id="recaptcha-google"
-          onChange={() => setButtonDisabled(false)}
-          // callback={}
-          // expired-callback={}
-          // error-callback={}
-        />
+          {/* CUSTOM CHECKBOX FOR PP */}
+          <div className="form-pp-container">
+            <label className="control checkbox">
+              <input type="checkbox" onChange={(e) => checkCheckBox(e)} />
+              <span className="control-indicator"></span>
+              <p>
+                I understand that Monocode will securely hold my data in
+                accordance with their privacy policy.
+              </p>
+            </label>
+          </div>
+        </div>
 
         <div className="submit-container">
           <button
