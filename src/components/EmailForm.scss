@@ -60,6 +60,14 @@
       button {
         margin-top: 0;
       }
+      button[disabled] {
+        cursor: not-allowed;
+        &:hover {
+          background-color: #333;
+          border-color: #333;
+          opacity: 0.5;
+        }
+      }
       .reset-form {
         max-width: 80px;
       }

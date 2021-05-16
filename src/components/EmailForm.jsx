@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./EmailForm.scss";
+import Recaptcha from "react-google-recaptcha";
 
 export const EmailForm = () => {
   // STATE FOR FORMS
@@ -11,6 +12,12 @@ export const EmailForm = () => {
   // const [formInterestedIn, setFormInterestedIn] = useState(
   //   "Interested In? (Optional)"
   // );
+
+  // GOOGLE CAPTCHA
+  const RECAPTCHA_KEY = "6Ldq0dcaAAAAAAVvxfX_Etiggl5ORlQjVvDofzeA";
+  // 6Ldq0dcaAAAAABTkooDAonTulHBiEa4p1BFWB_hD
+  const [buttonDisabled, setButtonDisabled] = useState(true);
+  //
   const checkCheckBox = (e) => {
     const contactFormPrivacyPolicy = document.getElementById("form-pp");
     const formPPContainer = document.querySelector(".form-pp-container");
@@ -26,6 +33,7 @@ export const EmailForm = () => {
   const onSubmitCheckForm = (e) => {
     const contactFormPrivacyPolicy = document.getElementById("form-pp");
     const formPPContainer = document.querySelector(".form-pp-container");
+
     if (contactFormPrivacyPolicy.value === "Accepted") {
       // DO NOTHING...
     } else {
@@ -72,6 +80,8 @@ export const EmailForm = () => {
       <form
         name="contact-form"
         method="post"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
         onSubmit={(e) => onSubmitCheckForm(e)}
         // action="https://formspree.io/f/mrgorgwn"
       >
@@ -178,9 +188,25 @@ export const EmailForm = () => {
             </p>
           </label>
         </div>
-        <div data-netlify-recaptcha="true"></div>
+
+        <Recaptcha
+          sitekey={RECAPTCHA_KEY}
+          size="normal"
+          theme="dark"
+          tabindex
+          id="recaptcha-google"
+          onChange={() => setButtonDisabled(false)}
+          // callback={}
+          // expired-callback={}
+          // error-callback={}
+        />
+
         <div className="submit-container">
-          <button className="btn-primary-two" type="submit">
+          <button
+            className="btn-primary-two"
+            type="submit"
+            disabled={buttonDisabled}
+          >
             Send Message
           </button>
           <div
