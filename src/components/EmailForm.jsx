@@ -14,7 +14,8 @@ export const EmailForm = () => {
   // );
 
   // GOOGLE CAPTCHA - KEYS ALSO IN NETLIFY ENVIRONMENT VARIBLE
-  const RECAPTCHA_KEY = "6Ldq0dcaAAAAAAVvxfX_Etiggl5ORlQjVvDofzeA";
+  // https://docs.netlify.com/forms/spam-filters/#recaptcha-2-challenge
+  const RECAPTCHA_SITE_KEY = "6Ldq0dcaAAAAAAVvxfX_Etiggl5ORlQjVvDofzeA";
   const [buttonDisabled, setButtonDisabled] = useState(true);
   //
   const checkCheckBox = (e) => {
@@ -38,7 +39,6 @@ export const EmailForm = () => {
     } else {
       formPPContainer.classList.add("error");
       e.preventDefault();
-      setButtonDisabled(true);
     }
   };
 
@@ -179,7 +179,7 @@ export const EmailForm = () => {
 
         <div className="v-container">
           <Recaptcha
-            sitekey={RECAPTCHA_KEY}
+            sitekey={RECAPTCHA_SITE_KEY}
             size="normal"
             theme="dark"
             tabindex
