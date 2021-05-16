@@ -27,7 +27,7 @@ export const EmailForm = () => {
     const contactFormPrivacyPolicy = document.getElementById("form-pp");
     const formPPContainer = document.querySelector(".form-pp-container");
     if (contactFormPrivacyPolicy.value === "Accepted") {
-      // DO NOTHING
+      // DO NOTHING...
     } else {
       formPPContainer.classList.add("error");
       e.preventDefault();
