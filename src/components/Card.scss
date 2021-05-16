@@ -15,7 +15,7 @@
     // border: 2px solid $primary-color;
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
     &:hover {
-      cursor: pointer;
+      cursor: zoom-in;
       .card-container__subtitle {
         opacity: 1;
       }
@@ -86,7 +86,6 @@
       background: rgba(0, 0, 0, 0.5);
     }
     .card-container__icon {
-      cursor: pointer;
       position: absolute;
       bottom: 20px;
       right: 20px;
