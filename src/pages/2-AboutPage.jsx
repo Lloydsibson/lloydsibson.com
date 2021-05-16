@@ -5,6 +5,8 @@ import { faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { faHandHoldingHeart } from "@fortawesome/free-solid-svg-icons";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 // import { Testimonials } from "../components/Testimonials";
 import { Clients } from "../components/Clients";
 
@@ -187,7 +189,7 @@ export const AboutPage = () => {
       </div>
       <div className="tech-stack-container">
         <div className="subheading-container">
-          <h2>Website Tech Stack</h2>
+          <h2>Current Tech Stack</h2>
         </div>
         <div className="tech-stack-container__info-container">
           <div className="tech-container">
@@ -249,6 +251,61 @@ export const AboutPage = () => {
             <div className="tech-container__tech-info">
               <h5>Figma</h5>
               <p>Designing (UI)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="tech-stack-container other">
+        <div className="tech-stack-container__info-container">
+          <div className="subheading-container">
+            <h2>Other Tech I Know</h2>
+          </div>
+          <div className="info-inner-container">
+            <div className="tech-container">
+              <div className="tech-container__tech-info">
+                <h5>JQuery</h5>
+                <p>JS Library</p>
+              </div>
+              <div className="tech-container__tech-info">
+                <h5>Bootstrap</h5>
+                <p>CSS Framework</p>
+              </div>
+              <div className="tech-container__tech-info">
+                <h5>SAP H5/H6</h5>
+                <p>CMS</p>
+              </div>
+            </div>
+
+            <div className="tech-container">
+              <div className="tech-container__tech-info">
+                <h5>WordPress</h5>
+                <p>CMS</p>
+              </div>
+              <div className="tech-container__tech-info">
+                <h5>Azure DevOps</h5>
+                <p>CI/CD</p>
+              </div>
+              <div className="tech-container__tech-info">
+                <h5>Monetate</h5>
+                <p>A/B Testing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="tech-stack-container__fun-facts">
+          <div className="subheading-container">
+            <h2>Fun Facts</h2>
+          </div>
+          <div className="fun-facts-container">
+            <div className="fun-facts-container__fun-facts">
+              <FontAwesomeIcon icon={faHeart} />
+              <h4>Happy Clients</h4>
+              <span>134</span>
+            </div>
+            <div className="fun-facts-container__fun-facts">
+              <FontAwesomeIcon icon={faClock} />
+              <h4>Working Hours</h4>
+              <span>4,360</span>
             </div>
           </div>
         </div>
