@@ -83,6 +83,38 @@ export class Testimonials extends Component {
             <div className="review-container">
               <div className="review-container__image-container">
                 <img
+                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1579535402/img/carla-review.jpg"
+                  alt="Reviewer"
+                />
+                <div className="spinner">
+                  <div className="double-bounce1"></div>
+                  <div className="double-bounce2"></div>
+                </div>
+              </div>
+              <div className="review-container__text-container">
+                <p>
+                  He is exceptional at using HTML, CSS, And JavaScript to
+                  deliver pixel perfect and responsive pages from our UI/UX
+                  designs.
+                  {/* I worked with Lloyd on the same Agile team at WOS Group. He is
+                  a very passionate and knowledgeable Front-End Developer. Also
+                  exceptional at using HTML, CSS, And JavaScript to deliver
+                  pixel perfect user interfaces and responsive content pages
+                  from our UI/UX designs. A natural problem solver, creative and
+                  easily approachable. Lloyd is a great asset to any company and
+                  he has my full recommendation. */}
+                </p>
+              </div>
+              <div className="review-container__client-details">
+                <h5>Carla Cabeça</h5>
+                <p>FARFETCH</p>
+              </div>
+            </div>
+          </div>
+          <div className="review-item">
+            <div className="review-container">
+              <div className="review-container__image-container">
+                <img
                   src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1583323291/img/bea-review.jpg"
                   alt="Reviewer"
                 />
@@ -100,6 +132,37 @@ export class Testimonials extends Component {
               <div className="review-container__client-details">
                 <h5>Beatriz Meireles</h5>
                 <p>Bea Sports Injury Clinic</p>
+              </div>
+            </div>
+          </div>
+          <div className="review-item">
+            <div className="review-container">
+              <div className="review-container__image-container">
+                <img
+                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1579535402/img/livia-review.jpg"
+                  alt="Reviewer"
+                />
+                <div className="spinner">
+                  <div className="double-bounce1"></div>
+                  <div className="double-bounce2"></div>
+                </div>
+              </div>
+              <div className="review-container__text-container">
+                <p>
+                  Lloyd has looked at processes and devised more functional and
+                  seamless ways for customers to have a pleasant journey.
+                  {/* Lloyd has joined the team as a front end developer and has
+                  showed focus and commitment, he has been proactive, always
+                  holding customer experience in mind. He has looked at
+                  processes and devised more functional and seamless ways for
+                  customers to either have a pleasant browsing journey or get
+                  the product they are looking for, all while being a great team
+                  member. */}
+                </p>
+              </div>
+              <div className="review-container__client-details">
+                <h5>Livia Nestianu</h5>
+                <p>Watches of Switzerland</p>
               </div>
             </div>
           </div>

@@ -182,7 +182,7 @@ export const EmailForm = () => {
             sitekey={RECAPTCHA_SITE_KEY}
             size="normal"
             theme="dark"
-            tabindex
+            tabindex={0}
             id="recaptcha-google"
             onChange={() => setButtonDisabled(false)}
             // callback={}
