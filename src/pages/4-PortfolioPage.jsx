@@ -115,6 +115,15 @@ export const PortfolioPage = () => {
             <a
               target="_blank"
               rel="noreferrer"
+              href="https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe"
+            >
+              Client Homepage Redesign (Low Fi Wireframe)
+            </a>
+          </div>
+          <div className="link-container">
+            <a
+              target="_blank"
+              rel="noreferrer"
               href="https://www.arclightpromotions.co.uk/"
             >
               APUK Official Website
@@ -145,15 +154,6 @@ export const PortfolioPage = () => {
               href="https://codepen.io/lloydsibson/pen/bGBqKpN"
             >
               Eventbrite API (Codepen)
-            </a>
-          </div>
-          <div className="link-container">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.arclightpromotions.co.uk/store-all-products/monster-tee-black-white-manga-collection"
-            >
-              Monster Tee - Manga Collection
             </a>
           </div>
         </div>
