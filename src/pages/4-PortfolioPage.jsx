@@ -87,10 +87,6 @@ export const PortfolioPage = () => {
       postedDate: new Date(2021, 1, 15),
       icon: faCodepen,
     },
-    ///
-    ///
-    ///
-    ///
     {
       url: "https://www.watches-of-switzerland.co.uk/rolex/servicing-your-rolex",
       linkText: "WOS - Servicing Your Rolex",
@@ -132,7 +128,7 @@ export const PortfolioPage = () => {
 
     if (daysSince === 1) {
       return day1;
-    } else if (daysSince > 2 && daysSince < 14) {
+    } else if (daysSince > 1 && daysSince < 14) {
       return day2To14;
     } else {
       return beyond;
@@ -180,7 +176,7 @@ export const PortfolioPage = () => {
             {LinkData.map((LinkData, id) => (
               <div key={id} className="link-container">
                 <FontAwesomeIcon icon={LinkData.icon} />
-                <div>
+                <div className="link-container__info">
                   <a target="_blank" rel="noreferrer" href={LinkData.url}>
                     {LinkData.linkText}
                   </a>
