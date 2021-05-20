@@ -1,6 +1,10 @@
 import "./4-PortfolioPage.scss";
 import { Card } from "../components/Card";
 import { Lightbox } from "../components/Lightbox";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFigma } from "@fortawesome/free-brands-svg-icons";
+import { faCodepen } from "@fortawesome/free-brands-svg-icons";
+import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 // import { faLink } from "@fortawesome/free-solid-svg-icons";
 // import { faVideo } from "@fortawesome/free-solid-svg-icons";
 // import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
@@ -50,35 +54,96 @@ export const PortfolioPage = () => {
       cardSubTitle: "Adobe Photoshop",
       icon: faSearchPlus,
     },
-    // {
-    //   image:
-    //     "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/reawaken-eventbrite-banner-new-version.png",
-    //   cardType: "Eventbrite Banner",
-    //   cardSubTitle: "Adobe Photoshop",
-    //   icon: faSearchPlus,
-    // },
-    // {
-    //   image:
-    //     "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1595526500/img/rac-logo.png",
-    //   cardType: "RAC Logo",
-    //   cardSubTitle: "Adobe Photoshop",
-    //   icon: faSearchPlus,
-    // },
-    // {
-    //   image:
-    //     "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013643/img/portfolio/amo-cards.png",
-    //   cardType: "AMO ID Cards",
-    //   cardSubTitle: "Photoshop & Printful",
-    //   icon: faSearchPlus,
-    // },
   ];
+
+  const LinkData = [
+    {
+      url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
+      linkText: "Client Low Fi Wireframe",
+      postedDate: new Date(2021, 4, 19),
+      icon: faFigma,
+    },
+    {
+      url: "https://www.figma.com/file/xawnaEYP9XECDnxihvXTNn/New-Website-%26-Theme-V2.1",
+      linkText: "New Website Design",
+      postedDate: new Date(2021, 4, 8),
+      icon: faFigma,
+    },
+    {
+      url: "https://www.arclightpromotions.co.uk/",
+      linkText: "APUK Official Website",
+      postedDate: new Date(2021, 3, 29),
+      icon: faDesktop,
+    },
+    {
+      url: "https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio?node-id=0%3A1",
+      linkText: "APUK - Mobile Nav Design",
+      postedDate: new Date(2021, 3, 10),
+      icon: faFigma,
+    },
+    {
+      url: "https://codepen.io/lloydsibson/pen/bGBqKpN",
+      linkText: "Eventbrite API",
+      postedDate: new Date(2021, 1, 15),
+      icon: faCodepen,
+    },
+    ///
+    ///
+    ///
+    ///
+    {
+      url: "https://www.watches-of-switzerland.co.uk/rolex/servicing-your-rolex",
+      linkText: "WOS - Servicing Your Rolex",
+      postedDate: new Date(2021, 0, 15),
+      icon: faDesktop,
+    },
+    {
+      url: "https://www.mappinandwebb.com/rolex/contact-us",
+      linkText: "M&W Rolex Map (Google)",
+      postedDate: new Date(2020, 6, 22),
+      icon: faDesktop,
+    },
+  ];
+
+  // TAKES POSTED DATE AND WORKS OUT HOW MANY DAYS HAVE PASSED AGAINST CURRENT DATE
+  const postedDate = (x) => {
+    const postedDate = x;
+    const now = new Date();
+
+    var difference = now - postedDate;
+    var millisecondsPerDay = 24 * 60 * 60 * 1000;
+    var daysSince = Math.floor(difference / millisecondsPerDay);
+
+    const day1 = (
+      <p>
+        <span>New</span>
+        Posted {daysSince} Day Ago
+      </p>
+    );
+
+    const day2To14 = (
+      <p>
+        <span>New</span>
+        Posted {daysSince} Days Ago
+      </p>
+    );
+
+    const beyond = <p>Posted {daysSince} Days Ago</p>;
+
+    if (daysSince === 1) {
+      return day1;
+    } else if (daysSince > 2 && daysSince < 14) {
+      return day2To14;
+    } else {
+      return beyond;
+    }
+  };
 
   return (
     <>
       <div className="page-title-container">
         <h1>Portfolio</h1>
-        <p>Recent Examples</p>
-        {/* <p>Previous Work</p> */}
+        <p>Selected Examples</p>
       </div>
       <div className="portfolio-container">
         {/* <div className="portfolio-container__filters-container">
@@ -111,50 +176,20 @@ export const PortfolioPage = () => {
           <div className="subheading-container">
             <h2>Links</h2>
           </div>
-          <div className="link-container">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe"
-            >
-              Client Homepage Redesign (Low Fi Wireframe)
-            </a>
-          </div>
-          <div className="link-container">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.arclightpromotions.co.uk/"
-            >
-              APUK Official Website
-            </a>
-          </div>
-          <div className="link-container">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio?node-id=0%3A1"
-            >
-              APUK - Mobile Nav Design (Figma)
-            </a>
-          </div>
-          <div className="link-container">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.figma.com/file/xawnaEYP9XECDnxihvXTNn/New-Website-%26-Theme-V2.1"
-            >
-              New Website Design (Figma)
-            </a>
-          </div>
-          <div className="link-container">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://codepen.io/lloydsibson/pen/bGBqKpN"
-            >
-              Eventbrite API (Codepen)
-            </a>
+          <div className="links-container">
+            {LinkData.map((LinkData, id) => (
+              <div key={id} className="link-container">
+                <FontAwesomeIcon icon={LinkData.icon} />
+                <div>
+                  <a target="_blank" rel="noreferrer" href={LinkData.url}>
+                    {LinkData.linkText}
+                  </a>
+                  <div className="posted-container">
+                    {postedDate(LinkData.postedDate)}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
