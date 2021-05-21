@@ -5,12 +5,6 @@ import VideoBackground from "../components/VideoBackground";
 import { HPCarousel } from "../components/HPCarousel";
 
 export const HomePage = () => {
-  const NavToggle = () => {
-    const body = document.body;
-    // const NavMenuIcon = document.getElementById("nav-icon");
-    body.classList.toggle("menu-open");
-    // NavMenuIcon.classList.toggle("menu-open");
-  };
   return (
     <>
       <VideoBackground />
@@ -37,7 +31,6 @@ export const HomePage = () => {
                 <NavLink
                   to={"/contact"}
                   className="contact"
-                  onClick={NavToggle}
                   activeClassName="selected"
                 >
                   Start Your Project
