@@ -7,9 +7,12 @@ import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3 } from "@fortawesome/free-brands-svg-icons";
 import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
 
+import { BackToTop } from "./BackToTop";
+
 export const Footer = () => {
   return (
     <footer className="footer-container">
+      <BackToTop />
       <ul>
         <li>
           <a href="https://github.com/Lloydsibson">Github</a>

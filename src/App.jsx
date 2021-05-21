@@ -7,12 +7,11 @@ import { PortfolioPage } from "./pages/4-PortfolioPage";
 import { ContactPage } from "./pages/5-ContactPage";
 import CookieConsent from "./components/CookieConsent";
 import { Footer } from "./components/Footer";
-//import LoadingScreen from "./components/LoadingScreen";
 
 const App = () => {
   // LOADING ICON - ONCE PAGE AND ALL CONTENT HAS LOADED HIDE LOADING SCREEN
   window.addEventListener("load", function () {
-    let loaComp = document.querySelector(".loading-screen");
+    const loaComp = document.querySelector(".loading-screen");
     loaComp.classList.add("-show_page");
   });
 
@@ -23,9 +22,10 @@ const App = () => {
   //   }
   // });
 
+  //console.log(process.env.REACT_APP_'NAME...');
+
   return (
     <>
-      {/* <LoadingScreen /> */}
       <CookieConsent />
       <Router>
         <div className="page-scroll">

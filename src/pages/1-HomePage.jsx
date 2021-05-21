@@ -1,9 +1,16 @@
 import "./1-HomePage.scss";
-import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2021.pdf";
+import { NavLink } from "react-router-dom";
+// import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2021.pdf";
 import VideoBackground from "../components/VideoBackground";
 import { HPCarousel } from "../components/HPCarousel";
 
 export const HomePage = () => {
+  const NavToggle = () => {
+    const body = document.body;
+    // const NavMenuIcon = document.getElementById("nav-icon");
+    body.classList.toggle("menu-open");
+    // NavMenuIcon.classList.toggle("menu-open");
+  };
   return (
     <>
       <VideoBackground />
@@ -27,9 +34,17 @@ export const HomePage = () => {
             </p>
             <div className="btn-container">
               <div className="btn-primary">
-                <a href={CvTwoPage} download>
+                <NavLink
+                  to={"/contact"}
+                  className="contact"
+                  onClick={NavToggle}
+                  activeClassName="selected"
+                >
+                  Start Your Project
+                </NavLink>
+                {/* <a href={CvTwoPage} download>
                   Download CV
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

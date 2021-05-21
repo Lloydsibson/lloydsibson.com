@@ -61,8 +61,11 @@
     align-items: center;
     justify-content: center;
     .btn-primary {
-      max-width: 163px;
+      max-width: 200px;
       width: 100%;
+      a {
+        max-width: 200px;
+      }
     }
   }
   .homepage-container__image-container {
