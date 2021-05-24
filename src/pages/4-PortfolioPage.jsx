@@ -59,7 +59,7 @@ export const PortfolioPage = () => {
   const LinkData = [
     {
       url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
-      linkText: "Client Homepage Redesign",
+      linkText: "Client Homepage Redesign (Work In Progress)",
       postedDate: new Date(2021, 4, 24),
       icon: faFigma,
     },
@@ -116,6 +116,13 @@ export const PortfolioPage = () => {
     var millisecondsPerDay = 24 * 60 * 60 * 1000;
     var daysSince = Math.floor(difference / millisecondsPerDay);
 
+    const today = (
+      <p>
+        <span>New</span>
+        Posted Today
+      </p>
+    );
+
     const day1 = (
       <p>
         <span>New</span>
@@ -132,7 +139,9 @@ export const PortfolioPage = () => {
 
     const beyond = <p>Posted {daysSince} Days Ago</p>;
 
-    if (daysSince === 1) {
+    if (daysSince === 0) {
+      return today;
+    } else if (daysSince === 1) {
       return day1;
     } else if (daysSince > 1 && daysSince < 14) {
       return day2To14;
