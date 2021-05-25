@@ -7,6 +7,8 @@ import { faCodepen } from "@fortawesome/free-brands-svg-icons";
 import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import { PagePositionScrollBar } from "./PagePositionScrollBar";
 
+import { WeatherAPI } from "./ApiWeather";
+
 export const Nav = () => {
   const NavToggle = () => {
     const body = document.body;
@@ -20,12 +22,14 @@ export const Nav = () => {
       <PagePositionScrollBar />
       <div className="nav-container__name-container">
         <div className="logo-container">
+          <WeatherAPI />
           <img
+            id="nav-logo"
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013440/img/logo-small.png"
             alt="Logo"
           />
         </div>
-        <h2>
+        <h2 id="nav-title">
           Lloyd <span>Sibson</span>
         </h2>
       </div>
