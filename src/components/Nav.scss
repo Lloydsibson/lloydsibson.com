@@ -21,10 +21,13 @@
     background: rgba(0, 0, 0, 0.3);
     border-radius: 100px;
     margin-right: 8px;
+    height: 50px;
+    width: 50px;
   }
   img {
     width: 100%;
     height: 100%;
+    max-height: 40px;
     max-width: 40px;
     padding: 5px;
     box-sizing: unset;
@@ -136,9 +139,9 @@
       .logo-container {
         margin-top: 0;
       }
-      .logo-container img {
-        max-width: 30px;
-      }
+      // .logo-container img {
+      //   max-width: 30px;
+      // }
     }
     .nav-container__links-container {
       margin: 0;
