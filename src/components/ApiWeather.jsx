@@ -46,7 +46,7 @@ export const WeatherAPI = () => {
       };
       navigator.geolocation.getCurrentPosition(showPosition);
     } else {
-      alert("Geolocation is not supported by this browser.");
+      alert("Geolocation is not supported by this browser");
     }
   };
 
