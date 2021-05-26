@@ -30,7 +30,7 @@ export const WeatherAPI = () => {
           const jsonWeatherInfo = await fetchWeatherInfo.json();
           console.log(jsonWeatherInfo);
           const weatherApiIcon = jsonWeatherInfo.current.condition.icon;
-          const weatherApiTemp = jsonWeatherInfo.current.temp_c;
+          // const weatherApiTemp = jsonWeatherInfo.current.temp_c;
           const weatherImage = document.getElementById("weather-api-icon");
           const navLogo = document.getElementById("nav-logo");
           const navTitle = document.getElementById("nav-title");
@@ -40,7 +40,7 @@ export const WeatherAPI = () => {
           weatherImage.setAttribute("src", weatherApiIcon);
           weatherImage.style.display = "block";
           // UPDATE NAV TITLE
-          navTitle.innerHTML = `${weatherApiTemp}°C <span>Now</span>`;
+          navTitle.innerHTML = `Your <span>Weather</span>`;
         } catch (e) {
           console.log(e);
         }
