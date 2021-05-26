@@ -252,6 +252,13 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 1416px) {
+  .page-container {
+    position: relative;
+    padding-top: 130px;
+  }
+}
+
 @media only screen and (min-width: 1421px) {
   .page-container {
     max-width: 1320px;

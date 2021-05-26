@@ -100,6 +100,18 @@
   }
 }
 
+@media only screen and (min-width: 1416px) {
+  .nav-container {
+    position: absolute;
+    width: 89.4%;
+    left: 50%;
+    z-index: 999;
+    margin-left: -44.7%;
+    top: 40px;
+    padding-bottom: 0;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .nav-container {
     .nav-container__links-container {
