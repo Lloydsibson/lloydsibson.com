@@ -250,13 +250,13 @@ body {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   overflow: hidden;
-  transform: translateZ(0);
 }
 
 @media only screen and (min-width: 1416px) {
   .page-container {
     position: relative;
     padding-top: 130px;
+    transform: translateZ(0);
   }
 }
 
