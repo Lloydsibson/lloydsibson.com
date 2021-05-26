@@ -10,11 +10,15 @@ import { PagePositionScrollBar } from "./PagePositionScrollBar";
 import { WeatherAPI } from "./ApiWeather";
 
 export const Nav = () => {
+  const body = document.body;
   const NavToggle = () => {
-    const body = document.body;
-    // const NavMenuIcon = document.getElementById("nav-icon");
     body.classList.toggle("menu-open");
-    // NavMenuIcon.classList.toggle("menu-open");
+  };
+
+  const NavItemToggle = () => {
+    body.classList.toggle("menu-open");
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
 
   return (
@@ -44,7 +48,7 @@ export const Nav = () => {
           <NavLink
             to={"/"}
             exact={true}
-            onClick={NavToggle}
+            onClick={NavItemToggle}
             activeClassName="selected"
           >
             Home
@@ -52,7 +56,11 @@ export const Nav = () => {
         </li>
         <li>
           {/* <a href="#Offline">About Me</a> */}
-          <NavLink to={"/about"} onClick={NavToggle} activeClassName="selected">
+          <NavLink
+            to={"/about"}
+            onClick={NavItemToggle}
+            activeClassName="selected"
+          >
             About
           </NavLink>
         </li>
@@ -60,7 +68,7 @@ export const Nav = () => {
           {/* <a href="#Offline">Portfolio</a> */}
           <NavLink
             to={"/portfolio"}
-            onClick={NavToggle}
+            onClick={NavItemToggle}
             activeClassName="selected"
           >
             Portfolio
@@ -70,7 +78,7 @@ export const Nav = () => {
           <NavLink
             to={"/contact"}
             className="contact"
-            onClick={NavToggle}
+            onClick={NavItemToggle}
             activeClassName="selected"
           >
             Contact
