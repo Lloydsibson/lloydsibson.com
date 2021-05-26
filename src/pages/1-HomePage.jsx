@@ -5,6 +5,11 @@ import VideoBackground from "../components/VideoBackground";
 import { HPCarousel } from "../components/HPCarousel";
 
 export const HomePage = () => {
+  const HomeLink = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+
   return (
     <>
       <VideoBackground />
@@ -32,6 +37,7 @@ export const HomePage = () => {
                   to={"/contact"}
                   className="contact"
                   activeClassName="selected"
+                  onClick={HomeLink}
                 >
                   Start Your Project
                 </NavLink>
