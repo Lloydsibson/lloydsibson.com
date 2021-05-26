@@ -9,18 +9,11 @@ export const Card = ({ Image, CardType, CardSubTitle, Icon }) => {
     backgroundURL = backgroundURL.replace(`")`, "");
     const lightboximage = document.querySelector(".lightbox-image");
     lightboximage.setAttribute("src", backgroundURL);
-
-    // ZOOM ICON
-    // e.currentTarget.previousElementSibling.previousElementSibling.style
-    // .backgroundImage;
-
-    // console.log(
-    //   e.currentTarget.previousElementSibling.previousElementSibling.style
-    //     .backgroundImage
-    // );
-
     const lightboxContainer = document.querySelector(".lightbox-container");
-    lightboxContainer.classList.toggle("-open");
+    lightboxContainer.classList.add("-open");
+    // FIX FOR SAFARI TRANSFORM ON HTML VIDEO
+    const pageContainer = document.querySelector(".page-container");
+    pageContainer.classList.add("-open");
   };
 
   const lightboxToggleZoomIcon = (e) => {
@@ -32,18 +25,11 @@ export const Card = ({ Image, CardType, CardSubTitle, Icon }) => {
     backgroundURL = backgroundURL.replace(`")`, "");
     const lightboximage = document.querySelector(".lightbox-image");
     lightboximage.setAttribute("src", backgroundURL);
-
-    // ZOOM ICON
-    // e.currentTarget.previousElementSibling.previousElementSibling.style
-    // .backgroundImage;
-
-    // console.log(
-    //   e.currentTarget.previousElementSibling.previousElementSibling.style
-    //     .backgroundImage
-    // );
-
     const lightboxContainer = document.querySelector(".lightbox-container");
-    lightboxContainer.classList.toggle("-open");
+    lightboxContainer.classList.add("-open");
+    // FIX FOR SAFARI TRANSFORM ON HTML VIDEO
+    const pageContainer = document.querySelector(".page-container");
+    pageContainer.classList.add("-open");
   };
 
   return (

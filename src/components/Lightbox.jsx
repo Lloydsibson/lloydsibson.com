@@ -3,7 +3,9 @@ import "./Lightbox.scss";
 export const Lightbox = () => {
   const lightboxToggle = () => {
     const lightboxContainer = document.querySelector(".lightbox-container");
-    lightboxContainer.classList.toggle("-open");
+    lightboxContainer.classList.remove("-open");
+    const pageContainer = document.querySelector(".page-container");
+    pageContainer.classList.remove("-open");
   };
   return (
     <div className="lightbox-container" onClick={() => lightboxToggle()}>
