@@ -1,0 +1,159 @@
+@import "../App";
+
+.wos-watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 0px auto;
+  max-width: 1000px;
+}
+
+.smart-watch-container {
+  margin: 0px auto;
+  font-family: "Poppins", Helvetica, sans-serif;
+  color: $primary-color;
+  max-width: 235px;
+}
+.wos-role-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.wos-role-container > p:nth-child(3) {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.smart-watch-container__inner-container {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+.smart-watch-container__inner-container img {
+  width: 100%;
+}
+.smart-watch-widgets {
+  position: absolute;
+  top: 49%;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 150px;
+  margin-left: -74px;
+  left: 50%;
+  height: 190px;
+}
+.smart-watch-widgets__inner-container {
+  position: relative;
+}
+
+/* APPLE WATCH - DATE & TIME*/
+.smart-watch__date-container {
+  text-transform: uppercase;
+  max-width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  text-align: center;
+}
+.smart-watch__date-container__day {
+  margin-bottom: -4px;
+}
+.smart-watch__date-container__time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2.3rem;
+  margin-top: -5px;
+  font-weight: 300;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 350px) {
+}
+
+/* ************************************** */
+
+/* WOS STOCK API */
+.wos-widget-api {
+  padding: 0;
+  max-width: 42px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.wos-widget-api p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin: 0;
+}
+.wos-widget-api #stock-price {
+  font-size: 0.77rem;
+  margin-top: -2px;
+}
+.wos-widget-api #market {
+  margin-bottom: -4px;
+}
+.wos-widget-api #stock-day-average {
+  margin-top: -1px;
+}
+
+/* -------------------------------------------- */
+/* GOOGLE NEWS API */
+.google-news-wos {
+  max-width: 600px;
+  position: absolute;
+  top: 60px;
+}
+.google-news-wos__card {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-radius: 20px;
+  flex-direction: column;
+}
+.google-news-wos__card img {
+  max-width: 25px;
+  margin-right: 10px;
+}
+.google-news-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.new-info-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+.news-link {
+  color: $primary-color;
+}
+.google-news-wos__card .news-title {
+  width: 100%;
+  font-size: 0.7rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 50px;
+  margin: 0;
+  line-height: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.google-news-wos__card .news-date {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}

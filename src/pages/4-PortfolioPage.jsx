@@ -10,6 +10,8 @@ import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 // import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
+import { AppleWatch } from "../components/AppleWatch";
+
 export const PortfolioPage = () => {
   const CardData = [
     {
@@ -182,6 +184,18 @@ export const PortfolioPage = () => {
               Icon={CardData.icon}
             />
           ))}
+        </div>
+        <div className="portfolio-container__api-container">
+          <div className="subheading-container">
+            <h2>API Components</h2>
+          </div>
+          <div className="apis-container">
+            <div className="api-container">
+              <AppleWatch />
+            </div>
+            <div className="api-container"></div>
+            <div className="api-container"></div>
+          </div>
         </div>
         <div className="portfolio-container__links-container">
           <div className="subheading-container">
