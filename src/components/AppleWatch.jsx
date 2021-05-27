@@ -1,6 +1,6 @@
 import React from "react";
-import WosStockApi from "./ApiStocksWOS";
-import GoogleNewsApi from "./ApiGoogleNewsWOS";
+import { WosStockApi } from "./ApiStocksWOS";
+import { GoogleNewsApi } from "./ApiGoogleNewsWOS";
 // SASS
 import "./AppleWatch.scss";
 

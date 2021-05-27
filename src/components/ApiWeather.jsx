@@ -21,14 +21,14 @@ export const WeatherAPI = () => {
             {
               method: "GET",
               headers: {
-                "x-rapidapi-key": `${process.env.REACT_APP_WEATHER_API_KEY}`,
+                "x-rapidapi-key": `${process.env.REACT_APP_RAPID_API_KEY}`,
                 "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
               },
             }
           );
 
           const jsonWeatherInfo = await fetchWeatherInfo.json();
-          console.log(jsonWeatherInfo);
+          //console.log(jsonWeatherInfo);
           const weatherApiIcon = jsonWeatherInfo.current.condition.icon;
           // const weatherApiTemp = jsonWeatherInfo.current.temp_c;
           const weatherImage = document.getElementById("weather-api-icon");

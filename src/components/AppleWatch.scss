@@ -108,13 +108,13 @@
 /* GOOGLE NEWS API */
 .google-news-wos {
   max-width: 600px;
+  width: 100%;
   position: absolute;
   top: 60px;
 }
 .google-news-wos__card {
   text-align: left;
   display: flex;
-  align-items: center;
   padding: 0;
   border-radius: 20px;
   flex-direction: column;
