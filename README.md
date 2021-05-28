@@ -17,7 +17,9 @@
 
 <a href="mail:to">lloydsibson2021@gmail.com</a>
 
-**Portfolio Website [![Netlify Status](https://api.netlify.com/api/v1/badges/d9dc98e7-7af7-436a-b394-a75868d558cd/deploy-status)](https://app.netlify.com/sites/lloydsibson/deploys)**
+**Portfolio Website**
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9dc98e7-7af7-436a-b394-a75868d558cd/deploy-status)](https://app.netlify.com/sites/lloydsibson/deploys)
 
 <a href="https://www.lloydsibson.com">https://www.lloydsibson.com</a>
 
