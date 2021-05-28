@@ -50,7 +50,7 @@ export const GoogleNewsApi = () => {
         </div>
         <div className="new-info-container">
           <a href="#0" className="news-link">
-            <p className="news-title">Loading News...</p>
+            <p className="news-title">Fetching News...</p>
           </a>
         </div>
       </div>
