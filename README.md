@@ -17,13 +17,11 @@
 
 <a href="mail:to">lloydsibson2021@gmail.com</a>
 
-**Portfolio Website (LIVE)**
+**Portfolio Website [![Netlify Status](https://api.netlify.com/api/v1/badges/d9dc98e7-7af7-436a-b394-a75868d558cd/deploy-status)](https://app.netlify.com/sites/lloydsibson/deploys)**
 
 <a href="https://www.lloydsibson.com">https://www.lloydsibson.com</a>
 
     For the purpose of showcasing my development skills and design standards.
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d9dc98e7-7af7-436a-b394-a75868d558cd/deploy-status)](https://app.netlify.com/sites/lloydsibson/deploys)
 
 <!-- # Getting Started with Create React App
 
