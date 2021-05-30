@@ -9,7 +9,7 @@ export const GoogleNewsApi = () => {
   // RUN FUNCTION ONCE DOM HAS LOADED
   useEffect(() => {
     fetchGoogleNewsApi();
-  });
+  }, []);
 
   const fetchGoogleNewsApi = async () => {
     try {

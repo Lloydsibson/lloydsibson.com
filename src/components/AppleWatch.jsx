@@ -1,105 +1,91 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { WosStockApi } from "./ApiStocksWOS";
 import { GoogleNewsApi } from "./ApiGoogleNewsWOS";
 // SASS
 import "./AppleWatch.scss";
 
-export class AppleWatch extends React.Component {
-  componentDidMount() {
-    const dateAndTime = new Date();
+export const AppleWatch = () => {
+  const [watchDate, setWatchDate] = useState("Date");
+  const [watchDay, setWatchDay] = useState("Day");
+  const [watchTime, setWatchTime] = useState("00:00");
 
+  useEffect(() => {
+    const dateAndTime = new Date();
     const currentDay = dateAndTime.getDay();
-    const currentDate = dateAndTime.getDate().toString();
+    // SETS WATCH DATE
+    setWatchDate(dateAndTime.getDate().toString());
 
     // WATCH DAY
-
-    const watchDay = document.querySelector(
-      ".smart-watch__date-container__day"
-    );
-
     switch (currentDay) {
       case 0:
         // code block
-        watchDay.innerText = "Sun";
+        setWatchDay("Sun");
         break;
 
       case 1:
         // code block
-        watchDay.innerText = "Mon";
+        setWatchDay("Mon");
         break;
 
       case 2:
         // code block
-        watchDay.innerText = "Tue";
+        setWatchDay("Tue");
         break;
 
       case 3:
         // code block
-        watchDay.innerText = "Wed";
+        setWatchDay("Wed");
         break;
 
       case 4:
         // code block
-        watchDay.innerText = "Thur";
+        setWatchDay("Thur");
         break;
 
       case 5:
         // code block
-        watchDay.innerText = "Fri";
+        setWatchDay("Fri");
         break;
 
       case 6:
         // code block
-        watchDay.innerText = "Sat";
+        setWatchDay("Sat");
         break;
 
       default:
       // code block
       // DO NOTHING
     }
-
-    // WATCH DATE
-    const watchDate = document.querySelector(
-      ".smart-watch__date-container__date"
-    );
-    watchDate.innerText = currentDate;
-
-    // WATCH TIME
-    const watchTime = document.querySelector(
-      ".smart-watch__date-container__time"
-    );
-    // UPDATES EVERY 1 SECOND
+    //UPDATES EVERY 1 SECOND
     setInterval(() => {
       let dateAndTime = new Date();
       let currentHour = dateAndTime.getHours();
       let currentMinutes = dateAndTime.getMinutes();
       currentMinutes = ("0" + currentMinutes).slice(-2);
       let watchTimeAndMinutes = `${currentHour}:${currentMinutes}`;
-      watchTime.innerText = watchTimeAndMinutes;
+      setWatchTime(watchTimeAndMinutes);
     }, 1000);
-  }
+  }, []);
 
-  render() {
-    return (
-      <div className="smart-watch-container">
-        <div className="smart-watch-container__inner-container">
-          <img
-            loading="lazy"
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1609536150/img/apple-watch-mock-up.png"
-            alt="Watch Face"
-            title="Smart Watch"
-          />
-          <div className="smart-watch-widgets">
-            <div className="smart-watch__date-container">
-              <div className="smart-watch__date-container__day">Day</div>
-              <div className="smart-watch__date-container__date">Date</div>
-            </div>
-            <div className="smart-watch__date-container__time">00:00</div>
-            <GoogleNewsApi />
-            <WosStockApi />
+  return (
+    <div className="smart-watch-container">
+      <div className="smart-watch-container__inner-container">
+        <img
+          loading="lazy"
+          src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1609536150/img/apple-watch-mock-up.png"
+          alt="Watch Face"
+          title="Smart Watch"
+        />
+        <div className="smart-watch-widgets">
+          <div className="smart-watch__date-container">
+            <div className="smart-watch__date-container__day">{watchDay}</div>
+            <div className="smart-watch__date-container__date">{watchDate}</div>
           </div>
+          <div className="smart-watch__date-container__time">{watchTime}</div>
+          <GoogleNewsApi />
+          <WosStockApi />
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};

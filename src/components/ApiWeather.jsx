@@ -8,7 +8,7 @@ export const WeatherAPI = () => {
   // RUN FUNCTION ONCE DOM HAS LOADED
   useEffect(() => {
     getLocation();
-  });
+  }, []);
 
   const getLocation = () => {
     // GEOLOCATION BROWSER API

@@ -8,7 +8,7 @@ export const WosStockApi = () => {
   // RUN FUNCTION ONCE DOM HAS LOADED
   useEffect(() => {
     fetchWosStockPrice();
-  });
+  }, []);
 
   const fetchWosStockPrice = async () => {
     try {
