@@ -114,9 +114,9 @@ export const PortfolioPage = () => {
     const postedDate = x;
     const now = new Date();
 
-    var difference = now - postedDate;
-    var millisecondsPerDay = 24 * 60 * 60 * 1000;
-    var daysSince = Math.floor(difference / millisecondsPerDay);
+    const difference = now - postedDate;
+    const millisecondsPerDay = 24 * 60 * 60 * 1000;
+    const daysSince = Math.floor(difference / millisecondsPerDay);
 
     const today = (
       <p>

@@ -1,21 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // SASS
 import "./PagePositionScrollBar.scss";
 
 export const PagePositionScrollBar = () => {
+  const [scrollWidth, setScrollWidth] = useState(0);
   useEffect(() => {
     window.addEventListener(
       "scroll",
       () => {
-        var scrollTop = window.scrollY;
-        var docHeight = document.body.offsetHeight;
-        var winHeight = window.innerHeight;
+        let scrollTop = window.scrollY;
+        let docHeight = document.body.offsetHeight;
+        let winHeight = window.innerHeight;
         //console.log(scrollTop, docHeight, winHeight);
-        var scrollPercent = scrollTop / (docHeight - winHeight);
-        var scrollPercentRounded = Math.round(scrollPercent * 100);
-        document.querySelector(
-          ".bar-container__bar"
-        ).style.width = `${scrollPercentRounded}%`;
+        let scrollPercent = scrollTop / (docHeight - winHeight);
+        let scrollPercentRounded = Math.round(scrollPercent * 100);
+        scrollPercentRounded = `${scrollPercentRounded}%`;
+
+        setScrollWidth(scrollPercentRounded);
+        // document.querySelector(
+        //   ".bar-container__bar"
+        // ).style.width = `${scrollPercentRounded}%`;
       },
       false
     );
@@ -23,7 +27,10 @@ export const PagePositionScrollBar = () => {
   return (
     <>
       <div className="bar-container">
-        <div className="bar-container__bar"></div>
+        <div
+          className="bar-container__bar"
+          style={{ width: scrollWidth }}
+        ></div>
       </div>
     </>
   );
