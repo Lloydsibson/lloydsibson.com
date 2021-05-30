@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // SASS
 import "./AppleWatch.scss";
 
 export const WosStockApi = () => {
+  const [wosStockPrice, setWosStockPrice] = useState("-");
+
   // RUN FUNCTION ONCE DOM HAS LOADED
   useEffect(() => {
     fetchWosStockPrice();
@@ -24,11 +26,10 @@ export const WosStockApi = () => {
       //console.log(returnedStockPrice);
       let stockPrice = returnedStockPrice["Global Quote"]["05. price"];
       stockPrice = stockPrice.substring(0, 3);
-      const stockPriceElement = document.getElementById("stock-price");
-      stockPriceElement.innerHTML = stockPrice;
+      // SET STATE
+      setWosStockPrice(stockPrice);
     } catch (e) {
-      const stockPriceElement = document.getElementById("stock-price");
-      stockPriceElement.innerText = "N/A";
+      setWosStockPrice("N/A");
       console.log(e, "Hit API Limit");
     }
   };
@@ -38,7 +39,7 @@ export const WosStockApi = () => {
       <p id="market">
         <span>WOSG.L</span>
       </p>
-      <div id="stock-price">-</div>
+      <div id="stock-price">{wosStockPrice}</div>
     </div>
   );
 };

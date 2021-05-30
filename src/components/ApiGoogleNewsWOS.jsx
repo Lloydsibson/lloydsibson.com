@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // SASS
 import "./AppleWatch.scss";
 
 export const GoogleNewsApi = () => {
+  const [googleNews, setGoogleNews] = useState("Fetching News...");
+  const [googleLink, setGoogleLink] = useState("0#");
+
   // RUN FUNCTION ONCE DOM HAS LOADED
   useEffect(() => {
     fetchGoogleNewsApi();
@@ -22,17 +25,15 @@ export const GoogleNewsApi = () => {
       );
       const returnedNews = await fetchNews.json();
       //console.log(returnedNews);
-      const googleNewsTitleContainer = document.querySelector(".news-title");
-      const googleNewsLinkContainer = document.querySelector(".news-link");
 
       const googleNewsTitle = await returnedNews.articles[0].title;
       const googleNewsLink = await returnedNews.articles[0].link;
 
-      googleNewsTitleContainer.innerHTML = googleNewsTitle;
-      googleNewsLinkContainer.href = `${googleNewsLink}`;
+      // SET STATE
+      setGoogleNews(googleNewsTitle);
+      setGoogleLink(googleNewsLink);
     } catch (e) {
-      const googleNewsTitleContainer = document.querySelector(".news-title");
-      googleNewsTitleContainer.innerText = "API LIMIT REACHED: 1 HOUR COOLDOWN";
+      setGoogleNews("API LIMIT REACHED: 1 HOUR COOLDOWN");
       console.log(e, "Hit API Limit");
     }
   };
@@ -49,8 +50,8 @@ export const GoogleNewsApi = () => {
           News
         </div>
         <div className="new-info-container">
-          <a href="#0" className="news-link">
-            <p className="news-title">Fetching News...</p>
+          <a href={googleLink} className="news-link">
+            <p className="news-title">{googleNews}</p>
           </a>
         </div>
       </div>
