@@ -245,7 +245,7 @@ export const AboutPage = () => {
 
             <div className="tech-container__tech-info">
               <h5>Node</h5>
-              <p>Server Enviroment</p>
+              <p>Server Environment</p>
             </div>
 
             <div className="tech-container__tech-info">

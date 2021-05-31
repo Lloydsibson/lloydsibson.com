@@ -7,7 +7,7 @@ const CookieConsent = () => {
 
   // RUN FUNCTION ONCE DOM HAS LOADED
   useEffect(() => {
-    if (document.cookie.indexOf("LloydsCookiePolicyMessage=Closed") >= 0) {
+    if (document.cookie.indexOf("LloydsCookiePolicyMessage=Accepted") >= 0) {
       // DO NOTHING
     } else {
       //SETS FADE IN DELAY WITH OPACITY CSS
@@ -19,7 +19,7 @@ const CookieConsent = () => {
 
   const CookieHandler = () => {
     document.cookie =
-      "LloydsCookiePolicyMessage=Closed; path=/; expires=Wed, 01 Jan 2022 09:00:00 GMT;";
+      "LloydsCookiePolicyMessage=Accepted; path=/; expires=Wed, 01 Jan 2023 09:00:00 GMT;";
     setCookieMessage(true);
   };
 
