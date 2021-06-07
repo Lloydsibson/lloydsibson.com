@@ -75,13 +75,13 @@ export const PortfolioPage = () => {
   const LinkData = [
     {
       url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
-      linkText: "Wireframe (High Fidelity)",
+      linkText: "Client Wireframe (High Fi.)",
       postedDate: new Date(2021, 4, 24),
       icon: faFigma,
     },
     {
       url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
-      linkText: "Wireframe (Low Fidelity)",
+      linkText: "Client Wireframe (Low Fi.)",
       postedDate: new Date(2021, 4, 19),
       icon: faFigma,
     },
