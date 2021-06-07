@@ -74,6 +74,12 @@ export const PortfolioPage = () => {
 
   const LinkData = [
     {
+      url: "https://www.beasportsclinic.co.uk/",
+      linkText: "Client Home Page (In Prog.)",
+      postedDate: new Date(2021, 5, 7),
+      icon: faDesktop,
+    },
+    {
       url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
       linkText: "Client Wireframe (High Fi.)",
       postedDate: new Date(2021, 4, 24),
@@ -115,12 +121,12 @@ export const PortfolioPage = () => {
       postedDate: new Date(2021, 0, 15),
       icon: faDesktop,
     },
-    {
-      url: "https://www.mappinandwebb.com/rolex/contact-us",
-      linkText: "M&W Rolex Map (Google)",
-      postedDate: new Date(2020, 6, 22),
-      icon: faDesktop,
-    },
+    // {
+    //   url: "https://www.mappinandwebb.com/rolex/contact-us",
+    //   linkText: "M&W Rolex Map (Google)",
+    //   postedDate: new Date(2020, 6, 22),
+    //   icon: faDesktop,
+    // },
   ];
 
   // TAKES POSTED DATE AND WORKS OUT HOW MANY DAYS HAVE PASSED AGAINST CURRENT DATE
