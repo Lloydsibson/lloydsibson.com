@@ -21,7 +21,7 @@ export const Footer = () => {
           <a href="https://www.linkedin.com/in/lloyd-sibson/">Linkedin</a>
         </li>
         <li>
-          <a href="https://codepen.io/lloydsibson/">CodePen</a>
+          <a href="https://codepen.io/lloydsibson/pens/public">CodePen</a>
         </li>
         <li>
           <a href="https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio?node-id=0%3A1">

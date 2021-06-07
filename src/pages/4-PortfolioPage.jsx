@@ -16,15 +16,22 @@ export const PortfolioPage = () => {
   const CardData = [
     {
       image:
-        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620419966/img/AFTM-a4-poster.png",
+        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1623057009/img/metal-mayhem-a4-poster_r16k3g.jpg",
       cardType: "A4 Event Poster",
       cardSubTitle: "Adobe Photoshop",
       icon: faSearchPlus,
     },
     {
       image:
+        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1623057366/img/sports-clinic-redesign.jpg",
+      cardType: "Clinic Redesign",
+      cardSubTitle: "Figma - Wireframe",
+      icon: faSearchPlus,
+    },
+    {
+      image:
         "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620422039/img/eventbrite-api.png",
-      cardType: "Eventbrite API Integration",
+      cardType: "Eventbrite API",
       cardSubTitle: "Figma & JavaScript ES6",
       icon: faSearchPlus,
     },
@@ -44,30 +51,37 @@ export const PortfolioPage = () => {
     },
     {
       image:
-        "https://images.squarespace-cdn.com/content/v1/5db41714f991e52a4904af5f/1606669957396-6HM6WHW3K5OYB047L1QY/ke17ZwdGBToddI8pDm48kPJXHKy2-mnvrsdpGQjlhod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmihaE5rlzFBImxTetd_yW5btdZx37rH5fuWDtePBPDaHF5LxdCVHkNEqSYPsUQCdT/mockup-62011df2.jpg?format=800w",
-      cardType: "Mask Design (Covid)",
-      cardSubTitle: "Photoshop & Printful",
-      icon: faSearchPlus,
-    },
-    {
-      image:
         "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013440/img/portfolio/jmgb.png",
       cardType: "JMGB Logo",
       cardSubTitle: "Adobe Photoshop",
       icon: faSearchPlus,
     },
+    // {
+    //   image:
+    //     "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1623056074/img/niw-logo-dev.jpg",
+    //   cardType: "NIW Development",
+    //   cardSubTitle: "Pen & Photoshop",
+    //   icon: faSearchPlus,
+    // },
+    // {
+    //   image:
+    //     "https://images.squarespace-cdn.com/content/v1/5db41714f991e52a4904af5f/1606669957396-6HM6WHW3K5OYB047L1QY/ke17ZwdGBToddI8pDm48kPJXHKy2-mnvrsdpGQjlhod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmihaE5rlzFBImxTetd_yW5btdZx37rH5fuWDtePBPDaHF5LxdCVHkNEqSYPsUQCdT/mockup-62011df2.jpg?format=800w",
+    //   cardType: "Mask Design (Covid)",
+    //   cardSubTitle: "Photoshop & Printful",
+    //   icon: faSearchPlus,
+    // },
   ];
 
   const LinkData = [
     {
       url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
-      linkText: "Client High Fi Wireframe",
+      linkText: "Wireframe (High Fidelity)",
       postedDate: new Date(2021, 4, 24),
       icon: faFigma,
     },
     {
       url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
-      linkText: "Client Low Fi Wireframe",
+      linkText: "Wireframe (Low Fidelity)",
       postedDate: new Date(2021, 4, 19),
       icon: faFigma,
     },
