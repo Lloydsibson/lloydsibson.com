@@ -75,7 +75,7 @@ export const PortfolioPage = () => {
   const LinkData = [
     {
       url: "https://www.beasportsclinic.co.uk/",
-      linkText: "Client Home Page (In Prog.)",
+      linkText: "Client Home Redesign",
       postedDate: new Date(2021, 5, 7),
       icon: faDesktop,
     },
