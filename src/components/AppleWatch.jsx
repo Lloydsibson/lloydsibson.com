@@ -71,7 +71,6 @@ export const AppleWatch = () => {
     <div className="smart-watch-container">
       <div className="smart-watch-container__inner-container">
         <img
-          loading="lazy"
           src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1609536150/img/apple-watch-mock-up.png"
           alt="Watch Face"
           title="Smart Watch"
