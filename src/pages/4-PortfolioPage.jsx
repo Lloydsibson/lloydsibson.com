@@ -23,7 +23,7 @@ export const PortfolioPage = () => {
     },
     {
       image:
-        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1623057366/img/sports-clinic-redesign.jpg",
+        "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1623612272/img/figma-client-wireframe-hi-fi.jpg",
       cardType: "Clinic Redesign",
       cardSubTitle: "Figma - Wireframe",
       icon: faSearchPlus,
@@ -31,8 +31,8 @@ export const PortfolioPage = () => {
     {
       image:
         "https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620422039/img/eventbrite-api.png",
-      cardType: "Eventbrite API",
-      cardSubTitle: "Figma & JavaScript ES6",
+      cardType: "Eventbrite Integration",
+      cardSubTitle: "API & JavaScript ES6",
       icon: faSearchPlus,
     },
     {
