@@ -407,6 +407,10 @@
   .event-card .share-icon-container {
     display: block;
   }
+  .card-venue-container,
+  .card-cta {
+    width: 50%;
+  }
 }
 
 @media (max-width: 321px) {
@@ -432,10 +436,6 @@
   .card-cta {
     font-size: 0.5rem;
     padding: 5px 10px;
-  }
-  .card-venue-container,
-  .card-cta {
-    width: 50%;
   }
   .card-event-summary-title {
     font-size: 0.8rem;
