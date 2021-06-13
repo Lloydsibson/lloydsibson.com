@@ -11,6 +11,34 @@ import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { Clients } from "../components/Clients";
 
 export const AboutPage = () => {
+  const startDate = new Date(2018, 8, 17);
+  const currentDate = new Date();
+  const calcWorkingDays = (startDate, currentDate) => {
+    // input given as Date objects
+    let Weeks,
+      DateDiff,
+      Adjust = 0;
+    if (currentDate < startDate) return -1; // error code if dates transposed
+    let Weekday1 = startDate.getDay(); // day of week
+    let Weekday2 = currentDate.getDay();
+    Weekday1 = Weekday1 === 0 ? 7 : Weekday1; // change Sunday from 0 to 7
+    Weekday2 = Weekday2 === 0 ? 7 : Weekday2;
+    if (Weekday1 > 5 && Weekday2 > 5) Adjust = 1; // adjustment if both days on weekend
+    Weekday1 = Weekday1 > 5 ? 5 : Weekday1; // only count weekdays
+    Weekday2 = Weekday2 > 5 ? 5 : Weekday2;
+    Weeks = Math.floor(
+      (currentDate.getTime() - startDate.getTime()) / 604800000
+    );
+    if (Weekday1 < Weekday2) {
+      //Equal to makes it reduce 5 days
+      DateDiff = Weeks * 5 + (Weekday2 - Weekday1);
+    } else {
+      DateDiff = (Weeks + 1) * 5 - (Weekday1 - Weekday2);
+    }
+    DateDiff -= Adjust; // take into account both days on weekend
+    return DateDiff + 1; // add 1 because dates are inclusive
+  };
+
   return (
     <>
       <div className="page-title-container about">
@@ -300,12 +328,12 @@ export const AboutPage = () => {
             <div className="fun-facts-container__fun-facts">
               <FontAwesomeIcon icon={faHeart} />
               <h4>Happy Clients</h4>
-              <span>134</span>
+              <span>136</span>
             </div>
             <div className="fun-facts-container__fun-facts">
               <FontAwesomeIcon icon={faClock} />
               <h4>Working Hours</h4>
-              <span>4,360</span>
+              <span>{calcWorkingDays(startDate, currentDate) * 8}</span>
             </div>
           </div>
         </div>
