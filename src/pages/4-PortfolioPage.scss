@@ -48,17 +48,17 @@
       &:hover {
         // opacity: 1;
         p {
-          color: $primary-color;
+          // color: $primary-color;
         }
       }
     }
-    svg {
-      color: #d5d5d5;
-      margin-right: 5%;
-      font-size: 1.2rem;
-      width: 20px;
-      opacity: 0.55;
-    }
+    // svg {
+    //   color: #d5d5d5;
+    //   margin-right: 5%;
+    //   font-size: 1.2rem;
+    //   width: 20px;
+    //   opacity: 0.55;
+    // }
   }
   .posted-container {
     display: flex;
@@ -140,7 +140,13 @@
     .apis-container {
       .api-container {
         width: 100%;
-        margin: 5px 0 0 0;
+        margin: 30px 0 0 0;
+        &:first-child {
+          margin: 10px 0 0 0;
+        }
+        &:last-child {
+          margin: 40px 0 0 0;
+        }
       }
     }
   }

@@ -13,6 +13,9 @@
   font-family: "Poppins", Helvetica, sans-serif;
   color: $primary-color;
   max-width: 235px;
+  height: 450px;
+  display: flex;
+  align-items: center;
 }
 .wos-role-container {
   display: flex;
@@ -137,6 +140,11 @@
   display: flex;
   flex-direction: column;
   max-width: 600px;
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 .news-link {
   color: $primary-color;

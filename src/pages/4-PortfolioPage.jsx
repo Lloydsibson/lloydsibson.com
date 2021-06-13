@@ -11,6 +11,7 @@ import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
 import { AppleWatch } from "../components/AppleWatch";
+import { EventBriteCard } from "../components/ApiEventBriteCard";
 
 export const PortfolioPage = () => {
   const CardData = [
@@ -213,7 +214,9 @@ export const PortfolioPage = () => {
             <div className="api-container">
               <AppleWatch />
             </div>
-            <div className="api-container"></div>
+            <div className="api-container">
+              <EventBriteCard />
+            </div>
             <div className="api-container"></div>
           </div>
         </div>
