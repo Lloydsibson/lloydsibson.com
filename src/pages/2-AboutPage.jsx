@@ -9,6 +9,8 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 // import { Testimonials } from "../components/Testimonials";
 import { Clients } from "../components/Clients";
+// SEO
+import { Helmet } from "react-helmet";
 
 export const AboutPage = () => {
   const startDate = new Date(2018, 8, 17);
@@ -41,6 +43,13 @@ export const AboutPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>About</title>
+        <meta
+          name="description"
+          content="Current and past experience, fun facts, previous clients and a downloadable CV available"
+        />
+      </Helmet>
       <div className="page-title-container about">
         <div className="cv-hero-container">
           <div className="cv-hero-container__info-container">

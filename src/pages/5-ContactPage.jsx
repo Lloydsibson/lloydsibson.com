@@ -6,10 +6,19 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { EmailForm } from "../components/EmailForm";
 import { Testimonials } from "../components/Testimonials";
+// SEO
+import { Helmet } from "react-helmet";
 
 export const ContactPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Contact</title>
+        <meta
+          name="description"
+          content="Reach out via e-mail or Whatsapp and see what other clients and companies have to say"
+        />
+      </Helmet>
       <div className="page-title-container">
         <h1>Contact</h1>
         <p>Lets Chat</p>
