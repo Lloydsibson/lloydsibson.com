@@ -138,6 +138,10 @@ body {
   opacity: 0;
 }
 
+.loading-screen.-show_page.-hide {
+  display: none;
+}
+
 // CSS LOADING ICON - RIPPLE EFFECT
 .spinner {
   width: 80px;

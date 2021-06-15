@@ -13,6 +13,9 @@ const App = () => {
   window.addEventListener("load", function () {
     const loaComp = document.querySelector(".loading-screen");
     loaComp.classList.add("-show_page");
+    setTimeout(() => {
+      loaComp.classList.add("-hide");
+    }, 1000);
   });
 
   // MODERN VERSION - LESS SUPPORT
