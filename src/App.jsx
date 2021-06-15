@@ -15,7 +15,7 @@ const App = () => {
     loaComp.classList.add("-show_page");
     setTimeout(() => {
       loaComp.classList.add("-hide");
-    }, 1000);
+    }, 1250);
   });
 
   // MODERN VERSION - LESS SUPPORT
