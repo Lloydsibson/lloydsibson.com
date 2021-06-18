@@ -16,10 +16,6 @@ export const HomePage = () => {
     <>
       <Helmet>
         <title>Lloyd Sibson BA - Front End Developer & Designer</title>
-        <meta
-          name="description"
-          content="Technically and creatively skilled to translate your brand into its best digital self. Specialising in React, jQuery, JavaScript ES5/ES6+, CSS3, SASS and HTML5..."
-        />
       </Helmet>
       <VideoBackground />
       <div className="homepage container">
