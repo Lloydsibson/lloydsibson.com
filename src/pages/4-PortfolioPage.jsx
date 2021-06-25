@@ -13,7 +13,7 @@ import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { AppleWatch } from "../components/AppleWatch";
 import { EventBriteCard } from "../components/ApiEventBriteCard";
 // SEO
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 export const PortfolioPage = () => {
   const CardData = [
@@ -184,13 +184,13 @@ export const PortfolioPage = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Portfolio</title>
         <meta
           name="description"
           content="Selected development and design examples from previous clients and projects"
         />
-      </Helmet>
+      </Helmet> */}
       <div className="page-title-container">
         <h1>Portfolio</h1>
         <p>Selected Examples</p>
