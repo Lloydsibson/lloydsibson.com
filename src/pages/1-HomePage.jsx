@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import VideoBackground from "../components/VideoBackground";
 import { HPCarousel } from "../components/HPCarousel";
 // SEO
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 export const HomePage = () => {
   const HomeLink = () => {
@@ -14,9 +14,13 @@ export const HomePage = () => {
 
   return (
     <>
-      {/* <Helmet>
+      <Helmet>
         <title>Lloyd Sibson BA - Front End Developer & Designer</title>
-      </Helmet> */}
+        <meta
+          name="description"
+          content="Technically and creatively skilled to translate your brand into its best digital self. Specialising in React, jQuery, JavaScript ES5/ES6+, CSS3, SASS and HTML5..."
+        />
+      </Helmet>
       <VideoBackground />
       <div className="homepage container">
         <div className="homepage-container__text-container">
