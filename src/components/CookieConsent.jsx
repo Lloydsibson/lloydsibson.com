@@ -5,9 +5,9 @@ import "./CookieConsent.scss";
 const CookieConsent = () => {
   const [cookieMessage, setCookieMessage] = useState(true);
 
-  // RUN FUNCTION ONCE DOM HAS LOADED
+  //RUN FUNCTION ONCE DOM HAS LOADED
   useEffect(() => {
-    if (document.cookie.indexOf("LloydsCookiePolicyMessage=Accepted") >= 0) {
+    if (localStorage.getItem("Lloydsibson.com-CookiePolicy") === "accepted") {
       // DO NOTHING
     } else {
       //SETS FADE IN DELAY WITH OPACITY CSS
@@ -18,8 +18,7 @@ const CookieConsent = () => {
   }, []);
 
   const CookieHandler = () => {
-    document.cookie =
-      "LloydsCookiePolicyMessage=Accepted; path=/; expires=Wed, 01 Jan 2023 09:00:00 GMT;";
+    localStorage.setItem('Lloydsibson.com-CookiePolicy', 'accepted');
     setCookieMessage(true);
   };
 
